@@ -1,0 +1,162 @@
+CREATE KEYSPACE if not exists acrocloud WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'};
+CREATE TABLE if not exists acrocloud.acronym (
+	acronym text,
+	name text,
+	description text,
+	catagory text,
+	PRIMARY KEY (acronym, name)
+)WITH bloom_filter_fp_chance = 0.01
+AND crc_check_chance = 1.0
+AND dclocal_read_repair_chance = 0.1
+AND default_time_to_live = 0
+AND gc_grace_seconds = 864000
+AND max_index_interval = 2048
+AND memtable_flush_period_in_ms = 0
+AND min_index_interval = 128
+AND read_repair_chance = 0.0
+AND speculative_retry = '99.0PERCENTILE'
+AND caching = {
+      'keys' : 'ALL',
+      'rows_per_partition' : 'NONE'
+}
+AND compression = {
+      'chunk_length_in_kb' : 64,
+      'class' : 'LZ4Compressor',
+      'enabled' : true
+}
+AND compaction = {
+      'bucket_high' : 1.5,
+      'bucket_low' : 0.5,
+      'class' : 'SizeTieredCompactionStrategy',
+      'enabled' : true,
+      'max_threshold' : 32,
+      'min_sstable_size' : 50,
+      'min_threshold' : 4,
+      'tombstone_compaction_interval' : 86400,
+      'tombstone_threshold' : 0.2,
+      'unchecked_tombstone_compaction' : false
+};
+//drop table acrocloud.acronym;
+select * from acrocloud.acronym;
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('FMS', 'Field Management System', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('TDS', 'Test Data Management', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('TTS','Total Tech Support', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('ECC', 'Enterprise Customer Care', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('OCIS', 'Open Customer Information Systems', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('dotcom', 'bestbuy.com', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('MTO', 'Marketing Technology and Operations', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('POS', 'Point of Sale', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('ETK', 'Employee Tool Kit ETK', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('CB', 'Core Blue', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('EDW', 'Enterprise Data Warehouse', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('ODS', 'Operational Data Store', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('GSP', 'Geek Squad Protection', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('SFMC', 'Sales Force Management System', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ( 'UWO', 'Universal Work Order', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('IPT', 'Integrations Program Testing', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('ITRB', 'Information Technology Review Board', 'A Project Manager would review solutions here for approval', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('APT', 'Application Program Testing', 'App testing that is done offshore', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('CE', 'Category Expansion', 'Security and data privacy', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('EIP', 'Enterprise Information Protection', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('ECC', 'Enterprise Customer Care', 'Best Buy customer service, usually over phone', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('AID', 'Alias ID eg, A6000352', 'Best Buy employee Identification number', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('APT', 'Application Program/product Testing', 'IT', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('COE', 'Center of Excellence', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('CER', 'Capital Expenditure Request', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('CW', 'Contingent Worker', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('DR', 'Disaster Recovery', 'null', 'IT' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('UWO', 'Universal Work Order', 'null', 'MISC' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('STH', 'Sales Transactions Hub', 'null', 'MISC' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('UWO', 'Universal Work Order', 'Field Management System (FMS) uses this to make transactions', 'MISC' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('IPT', 'Integrations Program Testing', 'Testing affects on other systems, done onshore by IPT team', 'Testing' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('UAT', 'User Acceptance Testing', 'Verifying the solution is accepted by the user, done by Business Analysts', 'Testing' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('CDS', 'Customers Data Services', 'Verifying the solution is accepted by the user, done by Business Analysts', 'MISC' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('SS', 'Software Security', 'null', 'Testing' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('OMT', 'Over Management Tool', 'Bundling SKUs for things like discounts', 'MISC' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('SM', 'Solution Master', 'Work flow setup, item link setup, banding setup', 'MISC' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('SM', 'Solution Master', 'Work flow setup, item link setup, banding setup', 'MISC' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('BO', 'Business Objects', 'null', 'MISC' );
+
+insert into acrocloud.acronym (acronym, name, description, catagory)
+values ('ODS', 'Operational Data Store', 'Reporting Tool', 'MISC' );
+
+
+
+//drop table acrocloud.acronym;
+ 
