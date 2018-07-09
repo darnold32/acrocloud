@@ -1400,7 +1400,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'JOS', 'Job Opening System','null','HR'
+    'JOS', 'Job Opening System','System for open Job positions.','HR'
   )
 ;
 Insert into
@@ -1414,7 +1414,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'KPI', 'Key Performance Indicators','null','HR'
+    'KPI', 'Key Performance Indicators','a quantifiable measure used to evaluate the success of an organization, employee, etc., in meeting objectives for performance.','HR'
   )
 ;
 Insert into
