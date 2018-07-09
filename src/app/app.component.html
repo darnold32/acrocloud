@@ -1,6 +1,8 @@
 <html>
+  
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/app.comonent.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {font-family: "Lato", sans-serif}
 </style>
@@ -14,32 +16,34 @@ body {font-family: "Lato", sans-serif}
     <a href="https://etk.bestbuy.com" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ETK</a>
     <a href="https://hub.bestbuy.com/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Employee HUB</a>
     <a href="https://selfservice/ESD/Loader.aspx?q=webext&f=dns" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SelfService</a>
-     </div>
-</div>
-
-<!-- Page content -->
-<div class="" style="max-width:2000px;margin-top:150px">
-   </div>
-   
-  <!-- Acronym Search Section -->
-  <div class=" w3-bby w3-black" id="acronymsearch">
-      <div class="w3-container w3-content w3-padding-200" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Acronym Search</h2>
-      <p class="w3-opacity w3-center"><i>All your acronyms in one place!</i></p><br>
-      <div class="w3-full">
-        <input class="w3-input w3-border" type="text" placeholder="Search for acronyms" required acronym="Name">
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>  
   </div>
-  <div class="flex">
+  </div>
+   
+  <!-- Acronym Search Engine Section -->
+  <div class=" w3-light-grey w3-padding-84  w3-display-topleft " id="acronymsearch">
+      <div class="w3-content w3-bby w3-padding-250" style="max-width:800px">
+           <h2 class="w3-wide w3-center">Acronym Search</h2>
+      <p class="w3-opacity w3-center"><i>All your acronyms in one place!</i></p><br>
+      <div class="w3-full w3-padding-16 w3-card-4"> 
+         <a class="w3-full w3-padding-16 w3-card-4 w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+           <a href="javascript:void(0)" input class="w3-full w3-padding-16 w3-card-4 w3-input w3-border w3-padding-large w3-hover-red w3-hide-small w3-right" type="text" placeholder="Search for acronyms" required acronym="Name"> <i class="fa fa-search"></i></a>  
+      
+           <!-- <a class="w3-full w3-padding-16 w3-card-4 w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+           <a href="javascript:void(0)" input class="w3-full w3-padding-16 w3-card-4 w3-input w3-border w3-padding-large w3-hover-red w3-hide-small w3-right" type="text" placeholder="Search for acronyms" required acronym="Name"> <i class="fa fa-search"></i></a>  
+      -->
+
+      </div>
+  <div class="flex w3-padding-small">
       <form action="search.html" class="flex-item">
-        <button class="button">Search</button>
+        <button class="button w3-card-4">Search</button>
       </form>
     
       <form action="random.html" class="flex-item">
-        <button class="button">Random</button>
+        <button class="button w3-card-4">Random</button>
       </form>
     </div>
 </div>
 </div>
-    
 </body>
 </html>
