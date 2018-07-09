@@ -1,45 +1,46 @@
 <html>
+  
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/app.comonent.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <style>
 body {font-family: "Lato", sans-serif}
 </style>
 <body>
     
 <!-- Navbar -->
-<div class="w3-top" id="navbar">
-  <div class="w3-bar w3-blue w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="https://etk.bestbuy.com" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ETK</a>
-    <a href="https://hub.bestbuy.com/" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Employee HUB</a>
-    <a href="https://selfservice/ESD/Loader.aspx?q=webext&f=dns" class="w3-bar-item w3-button w3-padding-large w3-hide-small">SelfService</a>
+<div class="top" id="navbar">
+  <div class="bar blue card">
+    <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="bar-item button padding-large">HOME</a>
+    <a href="https://etk.bestbuy.com" class="bar-item button padding-large hide-small">ETK</a>
+    <a href="https://hub.bestbuy.com/" class="bar-item button padding-large hide-small">Employee HUB</a>
+    <a href="https://selfservice/ESD/Loader.aspx?q=webext&f=dns" class="bar-item button padding-large hide-small">SelfService</a>
      </div>
-</div>
-
-<!-- Page content -->
-<div class="" style="max-width:2000px;margin-top:150px">
-   </div>
+  </div>  
+  <!-- Acronym Search Engine Section -->
+  <div class=" light-grey padding-84 display-topleft " id="acronymsearch">
+      <div class="content bby padding-250" style="max-width:800px">
+           <h2 class="-wide center">Acronym Search</h2>
+      <p class="opacity center"><i>All your acronyms in one place!</i></p><br>
    
-  <!-- Acronym Search Section -->
-  <div class=" w3-bby w3-black" id="acronymsearch">
-      <div class="w3-container w3-content w3-padding-200" style="max-width:800px">
-      <h2 class="w3-wide w3-center">Acronym Search</h2>
-      <p class="w3-opacity w3-center"><i>All your acronyms in one place!</i></p><br>
-      <div class="w3-full">
-        <input class="w3-input w3-border" type="text" placeholder="Search for acronyms" required acronym="Name">
+<div class="full">
+   <input class="border input card-4 "type="search" placeholder="Search for acronyms">
+   <i id="filtersubmit" class="fa fa-search" type="submit"></i>
+
   </div>
-  <div class="flex">
+  <!-- search and random button section -->
+  <div class="flex padding-small">
       <form action="search.html" class="flex-item">
-        <button class="button">Search</button>
+        <button class="srbutton card-4">Search</button>
       </form>
-    
-      <form action="random.html" class="flex-item">
-        <button class="button">Random</button>
+    <form action="random.html" class="flex-item">
+        <button class="srbutton card-4">Random</button>
       </form>
     </div>
+  </div>
 </div>
-</div>
-    
 </body>
 </html>
