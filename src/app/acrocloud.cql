@@ -1351,7 +1351,7 @@ Insert into
     acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
     (
-    'ID', 'Industrial Design','professional service of creating and developing concepts and specifications that optimize the function, value and appearance of products and systems','Misc'
+    'ID', 'Industrial Design','Professional service of creating and developing concepts and specifications that optimize the function, value and appearance of products and systems','Misc'
     )
 ;
 Insert into
@@ -1372,7 +1372,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'IRM', 'Information Retention Management','aspect of records and information management and the records life cycle that identifies the duration of time for which the information should be maintained or "retained," irrespective of format (paper, electronic, or other).','Misc'
+    'IRM', 'Information Retention Management','Aspect of records and information management and the records life cycle that identifies the duration of time for which the information should be maintained or "retained," irrespective of format (paper, electronic, or other).','Misc'
   )
 ;
 Insert into
@@ -1393,7 +1393,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'IVR', 'Interactive Voice Response','a technology that allows a computer to interact with humans through the use of voice.','IT'
+    'IVR', 'Interactive Voice Response','A technology that allows a computer to interact with humans through the use of voice.','IT'
   )
 ;
 Insert into
@@ -1414,14 +1414,14 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'KPI', 'Key Performance Indicators','a quantifiable measure used to evaluate the success of an organization, employee, etc., in meeting objectives for performance.','HR'
+    'KPI', 'Key Performance Indicators','A quantifiable measure used to evaluate the success of an organization, employee, etc., in meeting objectives for performance.','HR'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'KPM', 'Key Performance Metric','null','HR'
+    'KPM', 'Key Performance Metric','Measures an organization\'s behavior, activities, and performance. It should support a range of stakeholder needs from customers, shareholders to employees.','HR'
   )
 ;
 Insert into
@@ -1435,14 +1435,14 @@ Insert into
     acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
     (
-    'LPMS', 'Loss Prevention Management System','null','Finance'
+    'LPMS', 'Loss Prevention Management System','Solution designed to help loss prevention departments increase productivity, have better management of data, and greater visibility to all incidents. ','Finance'
     )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'LTL', 'Less than Truckload','null','Misc'
+    'LTL', 'Less than Truckload','The transport of freight that does not require the entire space of a truck.','Misc'
   )
 ;
 Insert into
@@ -1477,7 +1477,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'MAP', 'Minimum Advertised Price','null','Finance'
+    'MAP', 'Minimum Advertised Price','The lowest price a retailer can advertise the product for sale.','Finance'
   )
 ;
 Insert into
@@ -1491,7 +1491,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'MCCP', 'Multi Channel Contact Platform','null','Finance'
+    'MCCP', 'Multi Channel Contact Platform','Empowers customers the flexibility to choose the method of contact that makes the most sense for them at any given time.','Product'
   )
 ;
 Insert into
@@ -1505,7 +1505,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'MDR', 'MetaData Repository','null','IT'
+    'MDR', 'MetaData Repository','A database created to store metadata. Metadata is information about the structures that contain the actual data.','IT'
   )
 ;
 Insert into
@@ -1547,7 +1547,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'MRP', 'Materials Resource Planning','null','HR'
+    'MRP', 'Materials Resource Planning','A production planning, scheduling, and inventory control system used to manage manufacturing processes.','Product'
   )
 ;
 Insert into
@@ -1583,14 +1583,14 @@ Insert into
     acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
     (
-    'NOPAT', 'Net Operating Profit After Tax','null','Finance'
+    'NOPAT', 'Net Operating Profit After Tax','A measure of profit that excludes the costs and tax benefits of debt financing.','Finance'
     )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'NPV', 'Net Present Value','null','Finance'
+    'NPV', 'Net Present Value','Is the difference between the present value of cash inflows and the present value of cash outflows over a period of time.','Finance'
   )
 ;
 Insert into
@@ -1627,7 +1627,7 @@ Insert into
     acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
     (
-    'ODW', 'Oracle Data Warehouse','null','IT'
+    'ODW', 'Oracle Data Warehouse','Is Oracle\'s new, fully managed database tuned and optimized for data warehouse workloads with the market-leading performance of Oracle Database 18c','IT'
     )
 ;
 Insert into
@@ -1641,7 +1641,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'OGM', 'Operational Gross Margin','null','Finance'
+    'OGM', 'Operational Gross Margin','Metric used to measure a company\'s profitability.','Finance'
   )
 ;
 Insert into
@@ -1655,14 +1655,14 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'OM', 'Order Management','null','Product'
+    'OM', 'Order Management','Is the administration of business processes related to orders for goods or services.','Product'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'OMS', 'Order Management System','null','Product'
+    'OMS', 'Order Management System','System used for order entry and processing.','Product'
   )
 ;
 Insert into
@@ -1683,14 +1683,14 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'ORCA', 'ORDER REPORT of CUSTOMER ACTIVITY','null','Misc'
+    'ORCA', 'Order Report of Customer Activity','null','Misc'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'ORP', 'Oracle Retail Planning','null','Finance'
+    'ORP', 'Oracle Retail Planning','Empowers retailer planning teams to combine disparate data sources, including performance, market, and vendor, and leverage retail science to drive intelligent and localized assortments without the increased overhead of full-time data scientists','Finance'
   )
 ;
 Insert into
@@ -1704,7 +1704,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'OSS', 'Online Support Services','null','IT'
+    'OSS', 'Online Support Services','Remote support.','IT'
   )
 ;
 Insert into
@@ -1740,14 +1740,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'OWA', 'Outlook Web Access','null','IT'
-  )
-;
-Insert into
-  acrocloud.acronym (acronym, name, description, catagory) 
-VALUES
-  (
-    'P&L', 'Profit & Loss','null','Finance'
+    'P&L', 'Profit & Loss','Is a financial statement that summarizes the revenues, costs and expenses incurred during a specified period.','Finance'
   )
 ;
 Insert into
@@ -1761,21 +1754,21 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'PCB', 'Printed Circuit Board','null','IT'
+    'PCB', 'Printed Circuit Board','It is a board that supports and electrically connects electronic components or electrical components using conductive tracks, pads and other features etched from one or more sheet.','IT'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'PCHO', 'Personal Computers/ Home Office','null','Misc'
+    'PCHO', 'Personal Computers / Home Office','null','Misc'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'PCI', 'Payment Card Industry','null','Finance'
+    'PCI', 'Payment Card Industry','Is an information security standard for organizations that handle branded credit cards from the major card schemes.','IT'
   )
 ;
 Insert into
@@ -1796,7 +1789,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'PDG', 'Performance & Development Guide','null','HR'
+    'PDG', 'Performance & Development Guide','Opportunity for employees and managers to plan for an individual\'s development with an eye toward the department\'s future needs\'(On Learning Network)','HR'
   )
 ;
 Insert into
@@ -1817,21 +1810,21 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'PI', 'Physical Inventory','null','Misc'
+    'PI', 'Physical Inventory','I a process where a business physically counts its entire inventory.','Misc'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'PIM', 'Product Information Management','null','HR'
+    'PIM', 'Product Information Management','Managing the information required to market and sell products through distribution channels.','HR'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'PLM', ' Product Lifecycle Management','null','Finance'
+    'PLM', 'Product Lifecycle Management','Is the process of managing the entire lifecycle of a product from inception, through engineering design and manufacture, to service and disposal of manufactured products.','Finance'
   )
 ;
 Insert into
@@ -1859,7 +1852,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'PND', 'Personal Navigation Devices','null','HR'
+    'PND', 'Personal Navigation Devices','A portable electronic product which combines a positioning capability (such as GPS) and navigation functions.','Product'
   )
 ;
 Insert into
@@ -1881,14 +1874,14 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'POV', ' Point of View','null','Misc'
+    'POV', 'Point of View','A particular attitude or way of considering a matter.','Misc'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'PPM', 'Project Plan Management','null','HR'
+    'PPM', 'Project Plan Management','A formal, approved document that defines how the project is executed, monitored, and controlled.','HR'
   )
 ;
 Insert into
@@ -1916,7 +1909,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'PSA', 'Personal Shopping Assistant','null','Misc'
+    'PSA', 'Personal Shopping Assistant','Smart web - automatically detects and remembers details from web pages for individual products.','IT'
   )
 ;
 Insert into
@@ -1966,7 +1959,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'RDS', 'Report Distribution System','null','Misc'
+    'RDS', 'Report Distribution System','Provides an intermediate area to view reports online.','Misc'
   )
 ;
 Insert into
@@ -1980,7 +1973,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'RMM', 'Remote Monitoring & Management','null','IT'
+    'RMM', 'Remote Monitoring & Management','Software designed to help managed IT service providers remotely and proactively monitor client endpoints, networks and computers. This is also now known as remote IT management.','IT'
   )
 ;
 Insert into
@@ -1994,14 +1987,14 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'RFT', 'Retail Functionality Trainer','null','HR'
+    'RFT', 'Retail Functionality Trainer','Educates salespeople using various methods, like coaching, seminars and interactive activities.','HR'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'ROIC', 'Return on Invested Capital','null','Finance'
+    'ROIC', 'Return on Invested Capital','The percentage return that a company makes over its invested capital.','Finance'
   )
 ;
 Insert into
@@ -2015,7 +2008,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'RPT', 'Revenue Per Transaction','null','Finance'
+    'RPT', 'Revenue Per Transaction','Total revenue divided by average units','Finance'
   )
 ;
 Insert into
@@ -2029,7 +2022,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'RST', 'Retail Support Team','null','HR'
+    'RST', 'Retail Support Team','null','MISC'
   )
 ;
 Insert into
@@ -2057,7 +2050,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'RTV', 'Return To Vendor','null','Misc'
+    'RTV', 'Return To Vendor','null','Finance'
   )
 ;
 Insert into
@@ -2085,28 +2078,35 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'SA', 'Special Agent', 'a role within Geek Squad','HR'
+    'SA', 'Special Agent', 'A role within Geek Squad','HR'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'SAS', 'Stand Alone Store','null','Misc'
+    'FA', 'Future Agent', 'Multi-skilled Geek Squad agent.','HR'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'SCAC', 'Standard Carrier Alpha Code','null','Misc'
+    'SAS', 'Stand Alone Store','eg. Best Buy mobile store','Misc'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'SDF', 'Supplier Direct Fulfillment','null','Finance'
+    'SCAC', 'Standard Carrier Alpha Code','A unique two-to-four-letter code used to identify transportation companies.','Misc'
+  )
+;
+Insert into
+  acrocloud.acronym (acronym, name, description, catagory) 
+VALUES
+  (
+    'SDF', 'Supplier Direct Fulfillment','Extends a retailer\'s fulfillment capability by adding the supplier\'s capacity and specialized knowledge for handling and shipping products without the cost of building a facility or hiring an employee.','Finance'
   )
 ;
 Insert into
@@ -2120,7 +2120,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'SGO', 'Strategic Growth Office','null','Misc'
+    'SGO', 'Strategic Growth Office','Is responsible for working cross functionally with the Category Management & Merchandising teams, Services, E-commerce and others to develop and implement new businesses that deliver the customer experience and the financial goals across all channels. ','Misc'
   )
 ;
 Insert into
