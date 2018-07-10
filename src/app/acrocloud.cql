@@ -663,7 +663,6 @@ VALUES
     'CPC', '1. Capacity, Planning and Communications 2. Carrier Plan Catalog','null','Misc'
     );
  
-
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
@@ -1236,7 +1235,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'HLM', 'Holiday Leadership Meeting','null','HR'
+    'HLM', 'Holiday Leadership Meeting','Meetings for leaders to discuss holiday season essentials.','HR'
   )
 ;
 Insert into
@@ -1272,7 +1271,7 @@ Insert into
     acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
     (
-    'ID', 'Industrial Design','null','Misc'
+    'ID', 'Industrial Design','professional service of creating and developing concepts and specifications that optimize the function, value and appearance of products and systems','Misc'
     )
 ;
 Insert into
@@ -1286,16 +1285,14 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'IG', 'Instant Gift','null','Misc'
+    'IG', 'Instant Gift','Bundled deals eg. customers buys a prodcut and then recieves a reward such as a gift card.','Misc'
   )
 ;
-
-//--These are Nate's
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'IRM', 'Information Retention Management','null','Misc'
+    'IRM', 'Information Retention Management','aspect of records and information management and the records life cycle that identifies the duration of time for which the information should be maintained or "retained," irrespective of format (paper, electronic, or other).','Misc'
   )
 ;
 Insert into
@@ -1309,21 +1306,21 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'ITSM', 'I.T. for Service Management','null','IT'
+    'ITSM', 'Information Technology for Service Management','null','IT'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'IVR', 'Interactive Voice Response','null','IT'
+    'IVR', 'Interactive Voice Response','a technology that allows a computer to interact with humans through the use of voice.','IT'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'JOS', 'Job Opening System','null','HR'
+    'JOS', 'Job Opening System','System for open Job positions.','HR'
   )
 ;
 Insert into
@@ -1337,7 +1334,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'KPI', 'Key Performance Indicators','null','HR'
+    'KPI', 'Key Performance Indicators','a quantifiable measure used to evaluate the success of an organization, employee, etc., in meeting objectives for performance.','HR'
   )
 ;
 Insert into
@@ -1842,7 +1839,6 @@ VALUES
     'PSA', 'Personal Shopping Assistant','null','Misc'
   )
 ;
-
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
