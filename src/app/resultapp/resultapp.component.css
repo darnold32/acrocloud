@@ -1,0 +1,451 @@
+[type=checkbox],[type=radio]{
+    padding:0
+  }
+  [type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{
+    height:auto
+  }
+  [type=search]{
+    -webkit-appearance:searchfield;
+    outline-offset:-2px
+  }
+  [type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{
+    -webkit-appearance:searchfield
+  }
+  ::-webkit-input-placeholder{
+    color:inherit;
+    opacity:0.54
+  }
+  ::-webkit-file-upload-button{
+    -webkit-appearance:button;
+    font:inherit
+  }
+  /* End extract */
+  html,body{
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+    line-height:1.5
+  }
+  html{
+    overflow-x:hidden
+  }
+  h1{
+    font-size:36px
+  }
+  h2{
+    font-size:70px
+  }
+  h3{
+    font-size:24px
+  }
+  h4{
+    font-size:20px
+  }
+  h5{
+    font-size:18px
+  }
+  h6{
+    font-size:16px
+  }
+  .acro-font-serif{
+    font-family:serif
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-family:"Segoe UI",Arial,sans-serif;
+    font-weight:400;
+    margin:10px 0
+  }
+  .acro-wide{
+    letter-spacing:4px
+  }
+  hr{
+    border:0;
+    border-top:1px solid #eee;
+    margin:20px 0
+  }
+  .acro-image{
+    max-width:100%;
+    height:auto
+  }
+  .acro-img{
+    vertical-align:middle
+  }
+  .acro-table th:first-child,.table td:first-child,.table-all th:first-child,.table-all td:first-child{
+    padding-left:16px
+  }
+  .acro-btn,.acro-button{
+    border:none;
+    display:inline-block;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+  }
+  .acro-btn:hover{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
+  }
+  .acro-btn,.acro-button{
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+  }
+  
+  .acro-input{
+    padding:16px;
+    border-width: 1px;
+    border-color:blue;
+    border-bottom:none solid #ccc;
+    width:100%
+  }
+  .acro-select{
+    padding:9px 0;
+    width:100%;
+    border:none;
+    border-bottom:1px solid #ccc
+  }
+  
+  .acro-main,#main{
+    transition:margin-left .4s
+  }
+  .acro-bar{
+    width:98.8%;
+    height:100%;
+    overflow:hidden
+  }
+  .acro-center .acro-bar{
+    display:inline-block;
+    width:auto
+  }
+  .acro-bar .acro-bar-item{
+    padding:8px 16px;
+    float:left;
+    width:auto;
+    border:none;
+    display:block;
+    outline:0
+  }
+  .acro-bar .acro-dropdown-hover,.acro-bar .acro-dropdown-click{
+    position:static;
+    float:left
+  }
+  .acro-bar .acro-button{
+    white-space:normal
+  }
+  .acro-bar-block .acro-bar-item{
+    width:100%;
+    display:block;
+    padding:8px 16px;
+    text-align:left;
+    border:none;
+    white-space:normal;
+    float:none;
+    outline:0
+  }
+  .acro-bar-block .acro-center .acro-bar-item{
+    text-align:center
+  }
+  .acro-display-center{
+    text-align:right
+  }
+  .acro-block{
+    display:block;
+    width:100%
+  }
+  .acro-col,.acro-half,.acro-full,.acro-third,.acro-twothird,.acro-threequarter,.acro-quarter{
+    float:center;
+    width:100%
+  }
+  .acro-disp-full{
+    float:right
+  }
+   .acro-full{
+      width:99.99999%
+  }
+  .acro-content{
+    max-width:1200px;
+    margin:auto
+  }
+  .acro-hide{
+    display:none!important
+  }
+  @media (max-width:600px){
+    .acro-modal-content{
+        margin:0 10px;
+        width:auto!important
+    }
+   .acro-hide-small{
+        display:none!important
+    } 
+  }
+  .acro-top,.acro-bottom{
+    position:fixed;
+    width:100%;
+    z-index:1
+  }
+  .acro-top{
+    top:0
+  }
+  .acro-bottom{
+    bottom:0
+  }
+  .acro-overlay{
+    position:fixed;
+    display:none;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.5);
+    z-index:2
+  }
+  .acro-display-topleft{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0
+  }
+  .acro-display-topright{
+    position:absolute;
+    right:0;
+    top:0
+  }
+  .acro-display-bottomleft{
+    position:absolute;
+    left:0;
+    bottom:0
+  }
+  .acro-isplay-bottomright{
+    position:absolute;
+    right:0;
+    bottom:0
+  }
+  .acro-display-middle{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
+  }
+  .acro-display-left{
+    position:absolute;
+    top:50%;
+    left:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(-0%,-50%)
+  }
+  .acro-display-right{
+    position:absolute;
+    top:50%;
+    right:0%;
+    transform:translate(0%,-50%);
+    -ms-transform:translate(0%,-50%)
+  }
+  .acro-row-padding,.acro-row-padding>.acro-half,.acro-full,.acro-row-padding>.acro-third,.acro-row-padding>.acro-twothird,.acro-row-padding>.acro-threequarter,.acro-row-padding>.acro-quarter,.acro-row-padding>.acro-col{
+    padding:0px 0px
+  }
+  .acro-card,.acro-card-2{
+    box-shadow:0px 16px 26px 0px rgba(0,0,0,0.16),0px 16px 46px 0px rgba(0,0,0,0.12)
+  }
+  .acro-card-4,.acro-hover-shadow:hover{
+    box-shadow:0 6px 16px 0 rgba(0,0,0,0.2),0 6px 26px 0 rgba(0,0,0,0.19)
+  }
+  .text-tiny{
+    font-size:10px!important
+  }
+  .text-small{
+    font-size:12px!important
+  }
+  .text-medium{
+    font-size:15px!important
+  }
+  .text-large{
+    font-size:18px!important
+  }
+  .text-xlarge{
+    font-size:24px!important
+  }
+  .left-align{
+    text-align:left!important
+  }
+  .right-align{
+    text-align:right!important
+  }
+  .justify{
+    text-align:justify!important
+  }
+  .acro-center{
+    text-align:center!important
+  }
+  .acro-display-center{
+    text-align: right!important
+  }
+  .acro-section,.acro-code{
+    margin-top:16px!important;
+    margin-bottom:16px!important
+  }
+  .acro-margin{
+    margin:16px!important
+  }
+  .acro-margin-top{
+    margin-top:16px!important
+  }
+  .acro-margin-bottom{
+    margin-bottom:16px!important
+  }
+  .acro-margin-left{
+    margin-left:16px!important
+  }
+  .acro-margin-right{
+    margin-right:16px!important
+  }
+  .acro-padding-small{
+    padding:14px 8px!important
+  }
+  .acro-padding{
+    padding:8px 16px!important
+  }
+  .acro-padding-large{
+    padding:12px 30px!important
+  }
+  .acro-padding-16{
+    padding-bottom:0px!important;
+    padding-top:0px!important
+  }
+  .acro-padding-wide {
+    padding:18px 300px!important
+  }
+  .acro-padding-24{
+    padding-top:24px!important;
+    padding-bottom:24px!important
+  }
+  .acro-padding-32{
+    padding-top:32px!important;
+    padding-bottom:32px!important
+  }
+  .acro-padding-48{
+    padding-top:48px!important;
+    padding-bottom:48px!important
+  }
+  .acro-padding-64{
+    padding-top:64px!important;
+    padding-bottom:0%!important
+  }
+  .acro-padding-84{
+    padding-top:84px!important;
+    padding-bottom:64px!important
+  }
+  .acro-padding-124{
+    padding-top:124px!important;
+    padding-bottom:64px!important
+  }
+  .acro-padding-250{
+    padding-top:250px!important;
+    padding-bottom:24px!important
+  }
+  .acro-padding-300{
+    padding-top:300px!important;
+    padding-bottom:64px!important
+  }
+  .acro-left{
+    float:left!important
+  }
+  .acro-right{
+    float:right!important
+  }
+  .acro-middlecent{
+    float:center!important
+  }
+  .acro-button:hover{
+    color:rgb(0, 0, 0)!important;
+    background-color:rgb(255, 251, 0)!important
+  }
+  
+  /* Colors */
+  .acro-aqua,.acro-hover-aqua:hover{
+    color:#000!important;
+    background-color:#00ffff!important
+  }
+  .acro-blue,.acro-hover-blue:hover{
+    color:rgb(251, 255, 0)!important;
+    background-color:#2196F3!important
+  }
+  .acro-light-blue,.acro-hover-light-blue:hover{
+    color:#000!important;
+    background-color:#87CEEB!important
+  }
+  .acro-yellow,.acro-hover-yellow:hover{
+    color:#000!important;
+    background-color:#ffeb3b!important
+  }
+  .acro-light-grey,.acro-hover-light-grey:hover,.acro-light-gray,.acro-hover-light-gray:hover{
+    color:#000!important;
+    background-color:#f1f1f1!important
+  }
+  .acro-border-purple,.acro-hover-border-purple:hover{
+    border-color:#9c27b0!important
+  }
+  .acro-border-deep-purple,.acro-hover-border-deep-purple:hover{
+    border-color:#673ab7!important
+  }
+  .acro-border-red,.acro-hover-border-red:hover{
+    border-color:#f44336!important
+  }
+  .acro-border-yellow,.acro-shover-border-yellow:hover{
+    border-color:#ffeb3b!important
+  }
+  /*images */
+  .acro-bby{
+    background-image: url("bby.png");
+    background-repeat:no-repeat;
+     background-position: top;
+     background-attachment: scroll;
+    background-size: 50%;
+  }
+  /*Search and random button */
+  .acro-flex {
+     display: flex;
+     justify-content: center;
+  }
+  .acro-flex-item + .acro-flex-item {
+     margin-left: 10px;
+  }
+  .acro-srbutton {
+     margin-top: 15px;
+     background-color: rgb(0, 0, 0);
+     border-color:yellow;
+     border: 10;
+     color: yellow;
+     padding: 10px 60px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 16px;
+     cursor: pointer;
+  }
+  
+  #filtersubmit {
+    text-align: right;
+    position: relative;
+    z-index: 1;
+    left: -25px;
+    top: 1px;
+    color: #7B7B7B;
+    cursor: pointer;
+    width: 0;
+    
+  }
+  
+  #zoom85{
+    zoom: 85%;
+  }
+  

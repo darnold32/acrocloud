@@ -330,7 +330,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'AHRM', 'Area Human Resources Manager','Maintains and enhances the organization\'s human resources by planning, implementing, and evaluating employee relations and human resources policies, programs, and practices','HR'
+    'AHRM', 'Area Human Resources Manager','Maintains and enhances the organization''s human resources by planning, implementing, and evaluating employee relations and human resources policies, programs, and practices','HR'
   )
 ;
 Insert into
@@ -364,7 +364,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'AP', 'Accounts Payable','is an accounting entry that represents a company\'s obligation to pay off a short-term debt to its creditors or suppliers','Finance'
+    'AP', 'Accounts Payable','is an accounting entry that represents a company''s obligation to pay off a short-term debt to its creditors or suppliers','Finance'
   )
 ;
 
@@ -498,7 +498,7 @@ Insert into
     acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
     (
-    'BPM', 'Business Performance Management','management of an organization\'s performance to achieve one or more pre-selected goals','HR'
+    'BPM', 'Business Performance Management','management of an organization''s performance to achieve one or more pre-selected goals','HR'
     )
 ;
 Insert into
@@ -603,7 +603,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'CEB', 'Capital Evaluation Board','Board that reviews out plans to look at our long term investments, and how the company\'s capital is being used','Finance'
+    'CEB', 'Capital Evaluation Board','Board that reviews out plans to look at our long term investments, and how the company''s capital is being used','Finance'
   )
 ;
 Insert into
@@ -793,7 +793,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'DFA', 'Demand Forecast Analyst','An economics specialist who examines inventory levels, speed of production, and demand for product to ascertain a company\'s optimal production levels and potential future sales','Finance'
+    'DFA', 'Demand Forecast Analyst','An economics specialist who examines inventory levels, speed of production, and demand for product to ascertain a company''s optimal production levels and potential future sales','Finance'
   )
 ;
 Insert into
@@ -1109,14 +1109,14 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'GMD', 'Gross Margin Dollars','A company\'s total sales revenue minus its cost of goods sold (COGS), divided by total sales revenue, expressed as a percentage','Finance'
+    'GMD', 'Gross Margin Dollars','A company''s total sales revenue minus its cost of goods sold (COGS), divided by total sales revenue, expressed as a percentage','Finance'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'GMP', ' Gross Margin Percent','A company\'s total sales revenue minus its cost of goods sold (COGS), divided by total sales revenue, expressed as a percentage','Finance'
+    'GMP', ' Gross Margin Percent','A company''s total sales revenue minus its cost of goods sold (COGS), divided by total sales revenue, expressed as a percentage','Finance'
   )
 ;
 Insert into
@@ -1341,7 +1341,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'KPM', 'Key Performance Metric','Measures an organization\'s behavior, activities, and performance. It should support a range of stakeholder needs from customers, shareholders to employees.','HR'
+    'KPM', 'Key Performance Metric','Measures an organization''s behavior, activities, and performance. It should support a range of stakeholder needs from customers, shareholders to employees.','HR'
   )
 ;
 Insert into
@@ -1547,7 +1547,7 @@ Insert into
     acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
     (
-    'ODW', 'Oracle Data Warehouse','Is Oracle\'s new, fully managed database tuned and optimized for data warehouse workloads with the market-leading performance of Oracle Database 18c','IT'
+    'ODW', 'Oracle Data Warehouse','Is Oracle''s new, fully managed database tuned and optimized for data warehouse workloads with the market-leading performance of Oracle Database 18c','IT'
     )
 ;
 Insert into
@@ -1561,7 +1561,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'OGM', 'Operational Gross Margin','Metric used to measure a company\'s profitability.','Finance'
+    'OGM', 'Operational Gross Margin','Metric used to measure a company''s profitability.','Finance'
   )
 ;
 Insert into
@@ -1660,18 +1660,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-<<<<<<< HEAD
-    'OWA', 'Outlook Web Access','null','IT'
-  )
-;
-Insert into
-  acrocloud.acronym (acronym, name, description, catagory) 
-VALUES
-  (
-    'PL', 'Profit & Loss','null','Finance'
-=======
     'P&L', 'Profit & Loss','Is a financial statement that summarizes the revenues, costs and expenses incurred during a specified period.','Finance'
->>>>>>> 11874e216519f37a12788e04dd2a4923d013f2a6
   )
 ;
 Insert into
@@ -1720,7 +1709,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'PDG', 'Performance & Development Guide','Opportunity for employees and managers to plan for an individual\'s development with an eye toward the department\'s future needs\'(On Learning Network)','HR'
+    'PDG', 'Performance & Development Guide','Opportunity for employees and managers to plan for an individual''s development with an eye toward the department''s future needs''(On Learning Network)','HR'
   )
 ;
 Insert into
@@ -2030,7 +2019,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'SDF', 'Supplier Direct Fulfillment','Extends a retailer\'s fulfillment capability by adding the supplier\'s capacity and specialized knowledge for handling and shipping products without the cost of building a facility or hiring an employee.','Finance'
+    'SDF', 'Supplier Direct Fulfillment','Extends a retailer''s fulfillment capability by adding the supplier''s capacity and specialized knowledge for handling and shipping products without the cost of building a facility or hiring an employee.','Finance'
   )
 ;
 Insert into
@@ -2072,7 +2061,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'SOP', 'Standard Operating Platform','developed to support and manage every aspect of the company\'s business','Misc'
+    'SOP', 'Standard Operating Platform','developed to support and manage every aspect of the company''s business','Misc'
   )
 ;
 Insert into
@@ -2142,7 +2131,7 @@ Insert into
   acrocloud.acronym (acronym, name, description, catagory) 
 VALUES
   (
-    'STI', 'Short Term Incentive','Intended to compensate executives for achieving the company\'s short-term business strategy based on achievement of goals','Finance'
+    'STI', 'Short Term Incentive','Intended to compensate executives for achieving the company''s short-term business strategy based on achievement of goals','Finance'
   )
 ;
 Insert into
