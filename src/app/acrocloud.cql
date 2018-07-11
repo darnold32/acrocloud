@@ -74,7 +74,7 @@ insert into acrocloud.acronym (acronym, name, description, catagory)
 values ('APT', 'Application Program Testing', 'software testing', 'IT' );
 
 insert into acrocloud.acronym (acronym, name, description, catagory)
-values ('CE', 'Category Expansion', 'Security and data privacy', 'IT' );
+values ('CE', 'Category Expansion', 'Security and data privacy.', 'IT' );
 
 insert into acrocloud.acronym (acronym, name, description, catagory)
 values ('EIP', 'Enterprise Information Protection', 'Protection of corperate data', 'IT' );
