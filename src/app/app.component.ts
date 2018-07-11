@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import {ResultappComponent} from './resultapp/resultapp.component';
+import {AppRoutingModule} from './app-routing.module';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
