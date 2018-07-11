@@ -168,6 +168,9 @@
    .acro-full{
       width:99.99999%
   }
+  .acro-half{
+    width:49.99999%
+}
   .acro-content{
     max-width:1200px;
     margin:auto

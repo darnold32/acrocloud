@@ -12,7 +12,7 @@ const routes: Routes = [
       path: 'resultapp', component: ResultappComponent,
   },
   {
-    path: 'app', component: AppComponent
+    path: 'home', component: AppComponent
   }
   ];
 
