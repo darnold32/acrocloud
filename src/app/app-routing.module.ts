@@ -9,16 +9,14 @@ import {ResultappComponent} from './resultapp/resultapp.component'
 const routes: Routes = [
   //{ path: '', redirectTo: '/home', pathMatch: 'full' },
   {
-      path: '../resultapp', component:ResultappComponent
+      path: 'resultapp', component: ResultappComponent
   }
   ];
 
 @NgModule({
 
   imports: [ RouterModule.forRoot(routes) ],
-  exports: [
-    RouterModule
-  ],
+  exports: [ RouterModule ],
   //declarations: []
 })
 export class AppRoutingModule { }
