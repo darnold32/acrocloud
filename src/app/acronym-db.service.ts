@@ -10,11 +10,11 @@ export class AcronymDbService {
 
   constructor() {}
 
-  findAcronyms(acronym: string) Observable<Acronym[]>{
+  // findAcronyms(acronym: string) Observable<Acronym[]>{
 
-    return of(acronyms.find(acronym => acronym.name = acronym));
+  //   return of(acronyms.find(acronym => acronym.name = acronym));
 
-  }
+  // }
 
 
   
