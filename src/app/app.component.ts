@@ -11,7 +11,7 @@ export class AppComponent {
   acronymData: string;
 
 
-  getData(data:string){
+  setData(data:string){
 
     this.acronymData = this.cleanString(data);
   }

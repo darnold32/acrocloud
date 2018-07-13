@@ -31,10 +31,10 @@ body {font-family: "Lato", sans-serif}
   <!-- search and random button section -->
   <div class="zoom80 acro-flex acro-padding-small">
       <form routerLink="/resultapp" class="acro-flex-item">
-        <button class="acro-srbutton acro-card-4">Search</button>
+        <button (click)="setData" class="acro-srbutton acro-card-4">Search</button>
       </form>
     <form routerLink="/resultapp" class="acro-flex-item">
-        <button class="acro-srbutton acro-card-4">Random</button>
+        <button (click)="setData" class="acro-srbutton acro-card-4">Random</button>
       </form>
     </div>
   </div>
