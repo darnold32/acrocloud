@@ -18,6 +18,8 @@ export class AppComponent {
 
   cleanString(cleanMe:string){
 
+    alert(cleanMe.replace(/[^a-zA-Z ]/g, ""));
+
     return cleanMe;
   }
 }
