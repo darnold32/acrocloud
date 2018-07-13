@@ -53,4 +53,18 @@ export class AppComponent {
       //     this.data = data
       //   })
       // }
-    }
+//     }
+//   acronymData: string;
+
+
+//   setData(data:string){
+
+//     this.acronymData = this.cleanString(data);
+//   }
+
+//   cleanString(cleanMe:string){
+
+//     alert(cleanMe.replace(/[^a-zA-Z ]/g, ""));
+
+//     return cleanMe;
+   }

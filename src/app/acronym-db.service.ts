@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Acronym } from './acronym'
 import { acronyms } from './java-api'
+import { Observable, of} from 'rxjs';
+
 
 // import { Http, Response } from '@angular/http';
 import { HttpClient } from '@angular/common/http';
@@ -28,7 +30,7 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
   }
   // findAcronyms(acronym: string) Observable<Acronym[]>{
 
-  //   return of(acronyms.find(acronym => acronym.name = acronym));
+  //   //return of(acronyms.find(acronym => acronym.name == acronym));
 
   // }
 
