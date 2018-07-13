@@ -8,4 +8,16 @@ import {AppRoutingModule} from './app-routing.module';
 })
 export class AppComponent {
   title = 'Acronym Search';
+  acronymData: string;
+
+
+  getData(data:string){
+
+    this.acronymData = this.cleanString(data);
+  }
+
+  cleanString(cleanMe:string){
+
+    return cleanMe;
+  }
 }
