@@ -23,7 +23,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "styles.css",
+              "./css/my-styles.css",
+              "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "../node_modules/tether/dist/css/tether.min.css"
+          
             ],
             "scripts": []
           },

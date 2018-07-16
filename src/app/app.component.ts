@@ -38,20 +38,7 @@ export class AppComponent {
         console.log()
         service.getAcronym();
         service.getData();
-        // this.getName();
-        // this.getDescription();
-        // this.getCategory();
       }
-      // getData(){
-      //   return this.http.get(this.apiUrl)
-      //   .map((res: Response) => res.json())
-      // }
     
-      // getAcronym(){
-      //   this.getData().subscribe(data => {
-      //     console.log(data);
-      //     this.data = data
-      //   })
-      // }
-//     }
+ }
 
