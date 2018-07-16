@@ -16,13 +16,11 @@ import 'rxjs/Rx';
 export class AcronymDbService {
 private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/";
   data: any = {};
-  cleanMe: string = "F.M.s."
-
+  cleanMe:string = "F.m.s.";
   constructor(private http: HttpClient) {}
 
   getData(){
-    return this.http.get(this.apiUrl)
-    
+    return this.http.get(this.addStuff());
   }
 
   getAcronym(){
@@ -33,12 +31,12 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
   }
 
 
-addStuff(cleanMe: string){
+addStuff(){
+  this.cleanMe = this.cleanMe.replace(/[\/\\#,+()$~%.'":*?<>{}]/g,'');
+  this.cleanMe = this.cleanMe.toUpperCase();
+  this.apiUrl += this.cleanMe;
 
-  cleanMe.replace(/[\/\\#,+()$~%.'":*?<>{}]/g,'_');
-  cleanMe.toUpperCase();
-
-  return (this.apiUrl+="FMS");
+  return (this.apiUrl);
 }
 
   }
