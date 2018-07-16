@@ -21,7 +21,7 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
 
   getData(){
     return this.http.get(this.apiUrl)
-    .pipe(map((res: Response) => res.json()));
+    
   }
 
   getAcronym(){
