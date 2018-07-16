@@ -7,19 +7,21 @@ import { Observable, of} from 'rxjs';
 // import { Http, Response } from '@angular/http';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map'
+import { map } from "rxjs/operators";
+import 'rxjs/Rx';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AcronymDbService {
-private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/OOO";
+private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/ooo";
   data: any = {};
 
   constructor(private http: HttpClient) {}
 
   getData(){
     return this.http.get(this.apiUrl)
-    .map((res: Response) => res.json())
+    .pipe(map((res: Response) => res.json()));
   }
 
   getAcronym(){
@@ -42,14 +44,7 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
     return cleanMe;
 }
 
-  // findAcronyms(acronym: string) Observable<Acronym[]>{
+  }
 
-  //   //return of(acronyms.find(acronym => acronym.name == acronym));
-
-  // }
-
-
-  
-}
 
 
