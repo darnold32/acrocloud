@@ -25,16 +25,16 @@ body {font-family: "Lato", sans-serif}
            <h2 class="acro-wide acro-center">Acronym Search</h2>
       <p class="acro-iopacity acro-center"><i>All your acronyms in one place!</i></p><br>   
 <div class="zoom80 acro-full">
-   <input type="submit"class="acro-border acro-input acro-card-4" type="search" placeholder="Search for acronyms">
+   <input class="acro-border acro-input acro-card-4" type="search" placeholder="Search for acronyms">
    <i routerLink="/resultapp" id="filtersubmit" class="fa fa-search" type="submit"></i>
   </div>
   <!-- search and random button section -->
   <div class="zoom80 acro-flex acro-padding-small">
       <form routerLink="/resultapp" class="acro-flex-item">
-        <button (click)="setData" class="acro-srbutton acro-card-4">Search</button>
+        <button type="submit" class="acro-srbutton acro-card-4">Search</button>
       </form>
     <form routerLink="/resultapp" class="acro-flex-item">
-        <button (click)="setData" class="acro-srbutton acro-card-4">Random</button>
+        <button type="submit" class="acro-srbutton acro-card-4">Random</button>
       </form>
     </div>
   </div>
