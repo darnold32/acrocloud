@@ -14,23 +14,32 @@ import 'rxjs/Rx';
   providedIn: 'root'
 })
 export class AcronymDbService {
-private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/Fms";
+private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/";
   data: any = {};
-
+  cleanMe:string = "F.m.s.";
   constructor(private http: HttpClient) {}
 
   getData(){
-    return this.http.get(this.apiUrl)
-    
+    return this.http.get(this.addStuff());
   }
 
   getAcronym(){
     this.getData().subscribe(data => {
       console.log(data);
-      this.data = data
+      this.data = data;
     })
+  }
+
+
+addStuff(){
+  this.cleanMe = this.cleanMe.replace(/[\/\\#,+()$~%.'":*?<>{}]/g,'');
+  this.cleanMe = this.cleanMe.toUpperCase();
+  this.apiUrl += this.cleanMe;
+
+  return (this.apiUrl);
+}
 
   }
-}
+
 
 
