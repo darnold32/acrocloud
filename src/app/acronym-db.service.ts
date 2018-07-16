@@ -12,7 +12,7 @@ import 'rxjs/add/operator/map'
   providedIn: 'root'
 })
 export class AcronymDbService {
-private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/ooo";
+private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/OOO";
   data: any = {};
 
   constructor(private http: HttpClient) {}
@@ -25,20 +25,22 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
   getAcronym(){
     this.getData().subscribe(data => {
       console.log(data);
-      // this.cleanString(data);
-      this.data = data
+      this.data = data;
+      this.cleanString(data);
     })
   }
 
-//   cleanString(cleanMe:any){
+  cleanString(cleanMe:any){
 
-//      cleanMe.toUpperCase();
+     cleanMe.toUpperCase();
 
-//     alert(cleanMe.replace(/[^a-zA-Z ]/g, ""));
-//     // cleanMe = cleanMe.replace(/[^a-zA-Z 0-9]+/g,”);
+     cleanMe.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g,'_');
 
-//     return cleanMe;
-// }
+    //alert(cleanMe.replace(/[^a-zA-Z ]/g, ""));
+    // cleanMe = cleanMe.replace(/[^a-zA-Z 0-9]+/g,”);
+
+    return cleanMe;
+}
 
   // findAcronyms(acronym: string) Observable<Acronym[]>{
 
