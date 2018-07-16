@@ -21,8 +21,8 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
   constructor(private http: HttpClient) {}
 
   getData(){
-    return this.http.get(this.addStuff(this.cleanMe))
-    .pipe(map((res: Response) => res.json()));
+    return this.http.get(this.apiUrl)
+    
   }
 
   getAcronym(){
