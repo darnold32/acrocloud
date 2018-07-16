@@ -14,13 +14,14 @@ import 'rxjs/Rx';
   providedIn: 'root'
 })
 export class AcronymDbService {
-private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/ooo";
+private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/";
   data: any = {};
+  cleanMe: string = "F.M.s."
 
   constructor(private http: HttpClient) {}
 
   getData(){
-    return this.http.get(this.apiUrl)
+    return this.http.get(this.addStuff(this.cleanMe))
     .pipe(map((res: Response) => res.json()));
   }
 
@@ -28,20 +29,16 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
     this.getData().subscribe(data => {
       console.log(data);
       this.data = data;
-      this.cleanString(data);
     })
   }
 
-  cleanString(cleanMe:any){
 
-     cleanMe.toUpperCase();
+addStuff(cleanMe: string){
 
-     cleanMe.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g,'_');
+  cleanMe.replace(/[\/\\#,+()$~%.'":*?<>{}]/g,'_');
+  cleanMe.toUpperCase();
 
-    //alert(cleanMe.replace(/[^a-zA-Z ]/g, ""));
-    // cleanMe = cleanMe.replace(/[^a-zA-Z 0-9]+/g,”);
-
-    return cleanMe;
+  return (this.apiUrl+="FMS");
 }
 
   }
