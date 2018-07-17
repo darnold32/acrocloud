@@ -23,13 +23,7 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
   data: any = {};
   constructor(private http: HttpClient) {}
 
-<<<<<<< HEAD
-  
-  cleanMe: string = "FMS";
-=======
->>>>>>> a8cf0f40a49fcf90ef0f102da858e005e5e5c868
 
-  cleanMe: string = "O.m.s";
   // getData(){
   //   return this.http.get(this.cleanString(value));
   // }
