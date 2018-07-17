@@ -27,18 +27,18 @@ bootstrap: [AppComponent]
 
 export class AppComponent {
   title = 'Acronym Search';
+  value = '';
   private apiUrl = "http://localhost:8080";
      data: any = {};
 
   constructor(private service: AcronymDbService) {
         console.log()
-        service.getAcronym();
-        service.getData();
-  }
-      value = '';
-      searchAcronyms(value: string) {
-         this.value = value; 
-        console.log(value);
+        // service.getAcronym(this.value);
+        // service.getData(this.value);
       }
+      
+      searchAcronyms(value: string) {
+        console.log(this.value)
+                this.service.getAcronym(this.value);
+         this.value = value; }
  }
-
