@@ -32,13 +32,13 @@ export class AppComponent {
      data: any = {};
 
   constructor(private service: AcronymDbService) {
-        console.log()
+        
         // service.getAcronym(this.value);
         // service.getData(this.value);
       }
       
       searchAcronyms(value: string) {
-        console.log(this.value)
-                this.service.getAcronym(this.value);
-         this.value = value; }
+        console.log(this.value)    
+        this.service.getAcronym(this.value);
+        this.value = value; }
  }

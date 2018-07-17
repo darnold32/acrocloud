@@ -20,16 +20,10 @@ import { Component, ViewChild, AfterViewInit } from '@angular/core';
 
 export class AcronymDbService {
 private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/";
-  data: any = {};
+  data: any = {}
   constructor(private http: HttpClient) {}
 
-<<<<<<< HEAD
-  
-  cleanMe: string = "FMS";
-=======
->>>>>>> a8cf0f40a49fcf90ef0f102da858e005e5e5c868
 
-  cleanMe: string = "O.m.s";
   // getData(){
   //   return this.http.get(this.cleanString(value));
   // }
@@ -42,7 +36,7 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
 cleanString(cleanMe){
   cleanMe = cleanMe.replace(/[\/\\#,+()$~%.'":*?<>{}]/g,'');
   cleanMe = cleanMe.toUpperCase();
-  this.apiUrl += cleanMe;
+  this.apiUrl += cleanMe
   return this.apiUrl;
 }
   }
