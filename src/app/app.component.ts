@@ -39,6 +39,8 @@ export class AppComponent {
         service.getAcronym();
         service.getData();
       }
-    
+      value = '';
+      searchAcronyms(value: string) {
+         this.value = value; }
  }
 

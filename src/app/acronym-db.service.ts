@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Acronym } from './acronym'
 import { acronyms } from './java-api'
 import { Observable, of} from 'rxjs';
+import { AppComponent } from './app.component';
 
 
 // import { Http, Response } from '@angular/http';
@@ -18,7 +19,8 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
   data: any = {};
   constructor(private http: HttpClient) {}
 
-  cleanMe: string = "O.m.s"
+  
+  cleanMe: string = "searchAcronym";
 
   getData(){
     return this.http.get(this.cleanString());
@@ -33,6 +35,7 @@ cleanString(){
   this.cleanMe = this.cleanMe.replace(/[\/\\#,+()$~%.'":*?<>{}]/g,'');
   this.cleanMe = this.cleanMe.toUpperCase();
   this.apiUrl += this.cleanMe;
+
   return (this.apiUrl);
 }
   }

@@ -24,11 +24,14 @@ body {font-family: "Lato", sans-serif}
            <h2 class="acro-wide acro-center">Acronym Search</h2>
       <p class="acro-iopacity acro-center"><i>All your acronyms in one place!</i></p><br>   
 <div class="zoom80 acro-full">
-  <form id="searchBar">
-   <input class="acro-border acro-input acro-card-4" id="searchText" type="search" placeholder="Search for acronyms">
-   <i routerLink="/resultapp" id="filtersubmit" class="fa fa-search" type="submit"></i>
+  <form>
+   <input #input (keyup.enter)="searchAcronyms(input.value)" id="searchbar" class="acro-border acro-input acro-card-4"
+   (blur)="searchAcronyms(input.value); input.value='' ">
+   <button (click)="searchAcronyms(input.value)">search</button>
   </form>
+   <p>{{value}}</p>
   </div>
+  
   <!-- search and random button section -->
   <div class="zoom80 acro-flex acro-padding-small">
       <form routerLink="/resultapp" class="acro-flex-item">
