@@ -20,7 +20,7 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
   constructor(private http: HttpClient) {}
 
   
-  cleanMe: string = "searchAcronym";
+  cleanMe: string = "FMS";
 
   getData(){
     return this.http.get(this.cleanString());

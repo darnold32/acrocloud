@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
-import {ResultappComponent} from './resultapp/resultapp.component';
-// import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map'
 import { NgModule } from '@angular/core'
 import { FormsModule } from '@angular/forms';
-// import { HttpModule } from '@angular/http';
 import { BrowserModule } from '../../node_modules/@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AcronymDbService } from './acronym-db.service';
@@ -22,7 +19,6 @@ declarations: [
 imports: [
   BrowserModule,
   FormsModule,
-  // HttpModule,
   NgbModule,
 ],
 providers: [AppComponent, AcronymDbService],
@@ -38,9 +34,11 @@ export class AppComponent {
         console.log()
         service.getAcronym();
         service.getData();
-      }
+  }
       value = '';
       searchAcronyms(value: string) {
-         this.value = value; }
+         this.value = value; 
+        console.log(value);
+      }
  }
 

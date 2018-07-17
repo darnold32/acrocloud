@@ -19,6 +19,9 @@
   -webkit-appearance:button;
   font:inherit
 }
+<style>
+body {font-family: "Lato", sans-serif}
+</style>
 /* End extract */
 html,body{
   font-family:Verdana,sans-serif;
