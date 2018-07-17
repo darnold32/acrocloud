@@ -1,5 +1,5 @@
 export class Acronym {
-    acronym: string = "F.M.s.";
+    acronym: string;
     name: string;
     description: string;
     catagory:string;
@@ -7,7 +7,7 @@ export class Acronym {
     setAcronym(acronym: string){
         this.acronym=acronym;
     }
-    getAcronym(){
+    getAcronyms(){
         return this.acronym;
     }
     setName(name: string){
