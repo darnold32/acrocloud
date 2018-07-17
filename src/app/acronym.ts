@@ -4,8 +4,8 @@ export class Acronym {
     description: string;
     catagory:string;
     
-    setAcronym(acro: string){
-        this.acronym=acro;
+    setAcronym(acronym: string){
+        this.acronym=acronym;
     }
     getAcronym(){
         return this.acronym;
