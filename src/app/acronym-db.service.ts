@@ -4,7 +4,6 @@ import { acronyms } from './java-api'
 import { Observable, of} from 'rxjs';
 import { AppComponent } from './app.component';
 
-
 // import { Http, Response } from '@angular/http';
 import { HttpClient } from '@angular/common/http';
 import 'rxjs/add/operator/map'
@@ -36,8 +35,11 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
     this.http.get(this.cleanString(value)).subscribe(data => {
       console.log(data);
       this.data = data;
+      // this.acronym = JSON.parse(this.data)
+      this.jsonObjToAngObj();
 
     })
+
 
   }
 cleanString(cleanMe){
@@ -51,7 +53,6 @@ cleanString(cleanMe){
 }
 
 jsonObjToAngObj(){
-
 
   this.acronym = JSON.parse(this.data);
   console.log(this.acronym.acronym);
