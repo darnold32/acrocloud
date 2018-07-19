@@ -50,8 +50,8 @@ export class AppComponent {
       
       searchAcronyms(value: string) {
         console.log(this.value)
-                this.service.getAcronym(this.value);
-         this.value = value; 
+        this.service.getAcronym(this.value);
+        this.value = value; 
         }
  }
 

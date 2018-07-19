@@ -36,7 +36,7 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
       console.log(data);
       this.data = data;
       // this.acronym = JSON.parse(this.data)
-      this.jsonObjToAngObj();
+      // this.jsonObjToAngObj();
 
     })
 
@@ -52,16 +52,16 @@ cleanString(cleanMe){
   return dummyUrl;
 }
 
-jsonObjToAngObj(){
+// jsonObjToAngObj(){
 
-  this.acronym = JSON.parse(this.data);
-  console.log(this.acronym.acronym);
-  console.log(this.acronym.name);
-  console.log(this.acronym.description);
-  console.log(this.acronym.catagory);
+//   this.acronym = JSON.parse(this.data);
+//   console.log(this.acronym.acronym);
+//   console.log(this.acronym.name);
+//   console.log(this.acronym.description);
+//   console.log(this.acronym.catagory);
 
 
-}
+// }
   
 
 }

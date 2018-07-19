@@ -11,7 +11,18 @@
   <!-- Acronym Search Engine Section -->
   <div class="acro-light-grey acro-padding-84 acro-display-topleft ">
     <div class=" acro-fromleft acro-half">
-   <input class="acro-border acro-input acro-card-4" type="search" placeholder="Search for acronyms">
-   <i id="filtersubmit" class="fa fa-search" type="submit"></i>
+        <form>
+            <input #input (keyup.enter)="searchAcronyms(input.value)" id="searchbar" class="acro-border acro-input acro-card-4"
+            (blur)="searchAcronyms(input.value); input.value='' ">
+            <button type="button" routerLink="/resultapp" (click)="searchAcronyms(input.value)">search</button>
+           </form>
   </div>
+  <div class="acro-padding-16">
+  <h2 class=" acro-center">Acronym Name</h2>
+  <h1 class="acro-wide acro-center"><i>(acronym)</i></h1>  
+  <h5 class="acro-padding-20 acro-center">Acronym Description Acronym D
+    escriptionAcronym DescriptionAcronym Descriptionvvv v vAcronym Des
+    criptionvAcronym DescriptionAcronym DescriptionAcronym DescriptionAcronym Description</h5>
 </div>
+</div>
+

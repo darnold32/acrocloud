@@ -25,11 +25,11 @@
   
   <!-- search and random button section -->
   <div class="zoom80 acro-flex acro-padding-small">
-      <form routerLink="/resultapp" class="acro-flex-item">
-        <button type="submit" class="acro-srbutton acro-card-4">Search</button>
+      <form class="acro-flex-item">
+        <button type="button" routerLink="/resultapp" class="acro-srbutton acro-card-4"(click)="searchAcronyms(input.value)">Search</button>
       </form>
-    <form routerLink="/resultapp" class="acro-flex-item">
-        <button type="submit" class="acro-srbutton acro-card-4">Random</button>
+    <form class="acro-flex-item">
+        <button type="button" routerLink="/resultapp" class="acro-srbutton acro-card-4"(click)="searchAcronyms(input.value)">Random</button>
       </form>
     </div>
   </div>
