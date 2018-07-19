@@ -2,7 +2,7 @@
     acronym: string;
     name: string;
     description: string;
-    catagory:string;
+    category:string;
     
     // setAcronym(acronym: string){
     //     this.acronym=acronym;
