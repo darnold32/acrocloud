@@ -20,7 +20,11 @@ import { Component, ViewChild, AfterViewInit } from '@angular/core';
 
 export class AcronymDbService {
 private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/";
-  data: any = {}
+  
+  data: any = {};
+  jString: string;
+  public acronym:Acronym;
+
   constructor(private http: HttpClient) {}
 
 
@@ -28,18 +32,39 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
   //   return this.http.get(this.cleanString(value));
   // }
   getAcronym(value){
+
     this.http.get(this.cleanString(value)).subscribe(data => {
       console.log(data);
       this.data = data;
+
     })
+
   }
 cleanString(cleanMe){
+
+  var dummyUrl = this.apiUrl;
   cleanMe = cleanMe.replace(/[\/\\#,+()$~%.'":*?<>{}]/g,'');
   cleanMe = cleanMe.toUpperCase();
-  this.apiUrl += cleanMe
-  return this.apiUrl;
+  dummyUrl += cleanMe;
+
+  return dummyUrl;
 }
-  }
+
+jsonObjToAngObj(){
+
+
+  this.acronym = JSON.parse(this.data);
+  console.log(this.acronym.acronym);
+  console.log(this.acronym.name);
+  console.log(this.acronym.description);
+  console.log(this.acronym.catagory);
+
+
+}
+  
+
+}
+
 
 
 
