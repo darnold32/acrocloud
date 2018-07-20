@@ -21,7 +21,7 @@ import { ifError } from 'assert';
 export class AcronymDbService {
 private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/";
   
-  data: Acronym;
+  data: Acronym; 
   jString: string;
   
 
@@ -39,11 +39,13 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
       console.log(data);
       this.data  = data;
       this.jsonObjToTsObj();
-
+    
     })
+  
+    return this.data;
+
+
   }
-
-
   }
 cleanString(cleanMe){
 
@@ -61,12 +63,8 @@ jsonObjToTsObj(){
   console.log(this.data.name);
   console.log(this.data.description);
   console.log(this.data.category);
-
-}
-  
-
 }
 
 
 
-
+}

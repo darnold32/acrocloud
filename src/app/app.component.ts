@@ -9,6 +9,7 @@ import { BrowserModule } from '../../node_modules/@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AcronymDbService } from './acronym-db.service';
 import { Acronym } from './acronym';
+import { observable } from '../../node_modules/rxjs';
 
 @Component({
   selector: 'app-root',
@@ -33,19 +34,21 @@ bootstrap: [AppComponent]
 export class AppComponent {
   title = 'Acronym Search';
   value = '';
+  acronym:Acronym = new Acronym();
+
   // public acronym:Acronym;
   private apiUrl = "http://localhost:8080";
-     data: any = {};
 
   constructor(private service: AcronymDbService) {
         console.log()
         
       }
-      
+
       searchAcronyms(value: string) {
         console.log(this.value)
-                this.service.getAcronym(this.value);
-         this.value = value; 
+        this.acronym = this.service.getAcronym(this.value);
+        
+        this.value = value; 
         }
  }
 

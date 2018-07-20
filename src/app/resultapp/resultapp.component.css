@@ -32,7 +32,7 @@
     font-size:36px
   }
   h2{
-    font-size:70px
+    font-size:60px
   }
   h3{
     font-size:24px
@@ -46,6 +46,7 @@
   h6{
     font-size:16px
   }
+  
   .acro-font-serif{
     font-family:serif
   }
@@ -320,7 +321,11 @@
   }
   .acro-padding-16{
     padding-bottom:0px!important;
-    padding-top:0px!important
+    padding-top:90px!important
+  }
+  .acro-padding-20{
+    padding-bottom:0px!important;
+    padding-top:30px!important
   }
   .acro-padding-wide {
     padding:18px 300px!important
