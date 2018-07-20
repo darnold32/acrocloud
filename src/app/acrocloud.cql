@@ -1039,14 +1039,14 @@ Insert into
   acrocloud.acronym (acronym, name, description, category) 
 VALUES
   (
-    'FMS', 'Field Management System','Tool for Geek Squad out of store work (Eg. Home Installiation)','Product'
+    'FMS', 'Field Management System','Tool for Geek Squad Field Agents. (Eg. Home Installiation)','Product'
   )
 ;
 Insert into
   acrocloud.acronym (acronym, name, description, category) 
 VALUES
   (
-    'FSMM', 'Field Services Market Manager', 'a role within Geek Squad','HR'
+    'FSMM', 'Field Services Market Manager', 'A role within Geek Squad.','HR'
   )
 ;
 Insert into

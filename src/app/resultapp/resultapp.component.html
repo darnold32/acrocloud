@@ -12,15 +12,14 @@
 <div class="acro-light-grey acro-padding-84 acro-display-topleft ">
   <div class=" acro-fromleft acro-half">
     <form>
-      <input #input (keyup.enter)="searchAcronyms(input.value)" id="searchbar" class="acro-border acro-input acro-card-4" (blur)="searchAcronyms(input.value); input.value='' ">
-      <button type="button" routerLink="/resultapp" (click)="searchAcronyms(input.value)">search</button>
+      <input #input  id="searchbar" (keyup.enter)="searchAcronyms()" class="acro-border acro-input acro-card-4"
+      type="text" required [(ngModel)]="acro" name="acro" >
+      <button type="button" routerLink="/resultapp" (click)="searchAcronyms()">search</button>
     </form>
   </div>
-  <div class="acro-padding-16">
-    <h2 class=" acro-center">{{acronym.name}}</h2>
-    <h1 class="acro-wide acro-center">
-      <i>({{acronym.acronym}})</i>
-    </h1>
-    <h5 class="acro-padding-20 acro-center">{{(acronym.description)}}</h5>
+  <div class="acro-padding-16" >
+    <h2 class=" acro-center">{{acronym?.name}}</h2>
+    <h1 class="acro-wide acro-center"> {{acronym?.acronym}}</h1>
+    <h5 class="acro-padding-20 acro-center">{{acronym?.description}}</h5>
   </div>
 </div>

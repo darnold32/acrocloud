@@ -47,7 +47,6 @@ export class ResultappComponent implements OnInit {
 
   ngOnInit() {
     this.acro = this.service.acro;
-    this.service.getAcronym(this.acro).subscribe((data: Acronym) => {
-      this.acronym = data;
-    });  }
+    this.searchAcronyms();
+      }
 }
