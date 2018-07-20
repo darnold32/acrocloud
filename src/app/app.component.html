@@ -16,9 +16,9 @@
       <p class="acro-iopacity acro-center"><i>All your acronyms in one place!</i></p><br>   
 <div class="zoom80 acro-full">
  <form>
-   <input #input (keyup.enter)="searchAcronyms(input.value)" id="searchbar" class="acro-border acro-input acro-card-4"
-    input.value=''>
-   <button type="button" routerLink="/resultapp">search</button>
+   <input #input id="searchbar" class="acro-border acro-input acro-card-4"
+    type="text" [(ngModel)]="acro" name="acro" >
+   <button type="button" routerLink="/resultapp" (click)="searchAcronyms()">search</button>
   </form>
   </div>
   

@@ -26,28 +26,28 @@ import { AppComponent } from '../app.component';
   ],
   providers: [ResultappComponent, AcronymDbService],
   bootstrap: [ResultappComponent]
-  })
+})
 
 export class ResultappComponent implements OnInit {
   value = '';
-  // public acronym:Acronym;
-  @Input() acronym: Acronym;
+  public acronym: Acronym;
+  private acro: String = '';
   private apiUrl = "http://localhost:8080";
-     
 
-  constructor(private service: AcronymDbService, private component:AppComponent) {
-    console.log();
+
+  constructor(private service: AcronymDbService) {
   }
 
-  searchAcronyms(value: string) {
-    console.log(this.value)
-    this.acronym = this.service.getAcronym(this.value);
-    this.value = value; 
+  searchAcronyms() {
+    console.log(this.acro);
+    this.service.getAcronym(this.acro).subscribe((data: Acronym) => {
+      this.acronym = data;
+    });
+  }
 
-    }
-    
   ngOnInit() {
-    this.value = this.component.value;
-    this.searchAcronyms(this.value);
-  }
+    this.acro = this.service.acro;
+    this.service.getAcronym(this.acro).subscribe((data: Acronym) => {
+      this.acronym = data;
+    });  }
 }

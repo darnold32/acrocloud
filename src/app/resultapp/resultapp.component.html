@@ -16,7 +16,7 @@
       <button type="button" routerLink="/resultapp" (click)="searchAcronyms(input.value)">search</button>
     </form>
   </div>
-  <div *ngIf="acronym" class="acro-padding-16">
+  <div class="acro-padding-16">
     <h2 class=" acro-center">{{acronym.name}}</h2>
     <h1 class="acro-wide acro-center">
       <i>({{acronym.acronym}})</i>

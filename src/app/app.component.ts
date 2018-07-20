@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import {ResultappComponent} from './resultapp/resultapp.component';
+import { ResultappComponent } from './resultapp/resultapp.component';
 // import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map'
 import { NgModule } from '@angular/core'
@@ -18,36 +18,35 @@ import { observable } from '../../node_modules/rxjs';
 })
 
 @NgModule({
-declarations: [
-  AppComponent
-],
-imports: [
-  BrowserModule,
-  FormsModule,
-  // HttpModule,
-  NgbModule,
-],
-providers: [AppComponent, AcronymDbService],
-bootstrap: [AppComponent]
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    // HttpModule,
+    NgbModule,
+  ],
+  providers: [AppComponent, AcronymDbService],
+  bootstrap: [AppComponent]
 })
 
 export class AppComponent {
   title = 'Acronym Search';
-  @Input() value = '';
-  acronym:Acronym = new Acronym();
+  value = '';
+  acro: String = '';
 
   // // public acronym:Acronym;
   // private apiUrl = "http://localhost:8080";
 
   constructor(private service: AcronymDbService) {
-        console.log()
-        
-      }
+    console.log()
 
-      searchAcronyms(value: string) {
-        this.value = value;
-        console.log(value)
-        }
+  }
 
- }
+  searchAcronyms() {
+    this.service.acro = this.acro;
+  }
+
+}
 
