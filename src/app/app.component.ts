@@ -39,12 +39,6 @@ export class AppComponent {
 
   constructor(private service: AcronymDbService) {
         console.log()
-
-        // this.acronym = new Acronym();
-        // this.acronym.acronym = "AAA";
-        // this.acronym.name = "Acronym";
-        // this.acronym.description = "Descripton goes here";  
-        // this.acronym.catagory = "Cata"; 
         
       }
       
