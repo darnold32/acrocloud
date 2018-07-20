@@ -24,7 +24,10 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
   jString: string;
   
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+
+  
+  }
 
 
   getAcronym(value){
