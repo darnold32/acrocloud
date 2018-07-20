@@ -6,7 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from 'node_modules/@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { Acronym } from 'src/app/acronym';
-import { acronyms } from '../java-api';
+import { AppComponent } from '../app.component';
+
 
 @Component({
   selector: 'app-resultapp',
@@ -34,7 +35,7 @@ export class ResultappComponent implements OnInit {
   private apiUrl = "http://localhost:8080";
      
 
-  constructor(private service: AcronymDbService) {
+  constructor(private service: AcronymDbService, private component:AppComponent) {
     console.log();
   }
 
@@ -42,7 +43,11 @@ export class ResultappComponent implements OnInit {
     console.log(this.value)
     this.acronym = this.service.getAcronym(this.value);
     this.value = value; 
+
     }
+    
   ngOnInit() {
+    this.value = this.component.value;
+    this.searchAcronyms(this.value);
   }
 }

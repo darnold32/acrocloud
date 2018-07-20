@@ -15,10 +15,10 @@
            <h2 class="acro-wide acro-center">Acronym Search</h2>
       <p class="acro-iopacity acro-center"><i>All your acronyms in one place!</i></p><br>   
 <div class="zoom80 acro-full">
-  <form>
+ <form>
    <input #input (keyup.enter)="searchAcronyms(input.value)" id="searchbar" class="acro-border acro-input acro-card-4"
-   (blur)="searchAcronyms(input.value); input.value='' ">
-   <button type="button" routerLink="/resultapp" (click)="searchAcronyms(input.value)" >search</button>
+    input.value=''>
+   <button type="button" routerLink="/resultapp">search</button>
   </form>
   </div>
   

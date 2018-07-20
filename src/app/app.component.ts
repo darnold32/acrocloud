@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {ResultappComponent} from './resultapp/resultapp.component';
 // import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map'
@@ -33,11 +33,11 @@ bootstrap: [AppComponent]
 
 export class AppComponent {
   title = 'Acronym Search';
-  value = '';
+  @Input() value = '';
   acronym:Acronym = new Acronym();
 
-  // public acronym:Acronym;
-  private apiUrl = "http://localhost:8080";
+  // // public acronym:Acronym;
+  // private apiUrl = "http://localhost:8080";
 
   constructor(private service: AcronymDbService) {
         console.log()
@@ -45,10 +45,9 @@ export class AppComponent {
       }
 
       searchAcronyms(value: string) {
-        console.log(this.value)
-        this.acronym = this.service.getAcronym(this.value);
-        
-        this.value = value; 
+        this.value = value;
+        console.log(value)
         }
+
  }
 

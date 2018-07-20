@@ -1,6 +1,5 @@
 import { Injectable, Input } from '@angular/core';
 import { Acronym } from './acronym'
-import { acronyms } from './java-api'
 import { Observable, of} from 'rxjs';
 import { AppComponent } from './app.component';
 
@@ -23,11 +22,9 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
   
   data: Acronym; 
   jString: string;
-  
 
   constructor(private http: HttpClient) {
 
-  
   }
 
 
@@ -64,6 +61,7 @@ jsonObjToTsObj(){
   console.log(this.data.description);
   console.log(this.data.category);
 }
+
 
 
 
