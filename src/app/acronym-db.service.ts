@@ -20,7 +20,7 @@ import { Component, ViewChild, AfterViewInit } from '@angular/core';
 export class AcronymDbService {
 private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/";
   
-  data: Acronym;
+  data: Acronym; 
   jString: string;
   
 
@@ -28,13 +28,20 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
 
 
   getAcronym(value){
+    if (value == ''){
+
+    }
+    
+    else {
 
     this.http.get(this.cleanString(value)).subscribe((data: Acronym) => {
       console.log(data);
       this.data  = data;
       this.jsonObjToTsObj();
-
+    
     })
+  }
+    return this.data;
 
 
   }
@@ -58,4 +65,4 @@ jsonObjToTsObj(){
 
 
 
-
+}

@@ -18,9 +18,8 @@
   <form>
    <input #input (keyup.enter)="searchAcronyms(input.value)" id="searchbar" class="acro-border acro-input acro-card-4"
    (blur)="searchAcronyms(input.value); input.value='' ">
-   <button type="button" routerLink="/resultapp" (click)="searchAcronyms(input.value)">search</button>
+   <button type="button" routerLink="/resultapp" (click)="searchAcronyms(input.value)" >search</button>
   </form>
-   <p>{{value}}</p>
   </div>
   
   <!-- search and random button section -->
