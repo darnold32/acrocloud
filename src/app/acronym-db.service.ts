@@ -11,6 +11,7 @@ import { map } from "rxjs/operators";
 import 'rxjs/Rx';
 
 import { Component, ViewChild, AfterViewInit } from '@angular/core';
+import { ifError } from 'assert';
 
 @Injectable({
   providedIn: 'root'
@@ -32,12 +33,15 @@ private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acron
 
   getAcronym(value){
 
+    if(value !=''){
+      
     this.http.get(this.cleanString(value)).subscribe((data: Acronym) => {
       console.log(data);
       this.data  = data;
       this.jsonObjToTsObj();
 
     })
+  }
 
 
   }
