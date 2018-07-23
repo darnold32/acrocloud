@@ -1,4 +1,4 @@
- export class Acronym {
+export class Acronym {
     acronym: string;
     name: string;
     description: string;

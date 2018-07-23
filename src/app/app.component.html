@@ -18,7 +18,8 @@
       <div class="searchContainer acro-full">
     <input #input  id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4"
     type="text" [(ngModel)]="acro" name="acro" placeholder="Search for Acronyms" >
-   <button class="searchButton acro-card-4"type="submit" routerLink="/resultapp" (click)="searchAcronyms()"><i class="fa fa-search searchIcon"></i></button>
+   <button class="searchButton acro-card-4"type="submit" routerLink="/resultapp" (click)="searchAcronyms()">
+    <i class="fa fa-search searchIcon"></i></button>
   </div>
   </form>
 

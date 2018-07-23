@@ -41,6 +41,7 @@ export class ResultappComponent implements OnInit {
     console.log(this.acro);
     this.service.getAcronym(this.acro).subscribe((data: Acronym) => {
       this.acronym = data;
+      this.checkDescription();
     });
   }
 
@@ -48,5 +49,16 @@ export class ResultappComponent implements OnInit {
   ngOnInit() {
     this.acro = this.service.acro;
     this.searchAcronyms();
-      }
+  }
+
+  checkDescription() {
+    if (this.acronym.description == "null") {
+      this.acronym.description = "No Description";
+    }
+    else {
+      this.acronym.description = this.acronym.description.charAt(0).toUpperCase() + this.acronym.description.slice(1);
+    }
+
+  }
 }
+
