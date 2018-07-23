@@ -32,6 +32,8 @@ export class ResultappComponent implements OnInit {
   public acronym: Acronym;
   private acro: String = '';
   private apiUrl = "http://localhost:8080";
+  public show:boolean = false;
+  public buttonName:any = 'Click Me!';
 
 
   constructor(private service: AcronymDbService) {
@@ -57,8 +59,24 @@ export class ResultappComponent implements OnInit {
     }
     else {
       this.acronym.description = this.acronym.description.charAt(0).toUpperCase() + this.acronym.description.slice(1);
+
     }
 
   }
+
+
+  //Toggle Used for the about Button
+  toggle() {
+    this.show = !this.show;
+
+    if(this.show)  
+      this.buttonName = "Hide";
+    else
+      this.buttonName = "Click Me!";
+  }
 }
+
+
+
+
 

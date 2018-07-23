@@ -320,7 +320,7 @@
     padding:12px 30px!important
   }
   .acro-padding-16{
-    padding-bottom:0px!important;
+    padding-bottom:150px!important;
     padding-top:90px!important
   }
   .acro-padding-20{
@@ -362,6 +362,7 @@
     padding-top:300px!important;
     padding-bottom:64px!important
   }
+
   .acro-left{
     float:left!important
   }
@@ -505,4 +506,15 @@
   background-size: 10%;
   background-repeat: no-repeat;
 }
- 
+.zoom{
+  zoom: 90%;
+}
+
+.aboutButtonReveal{
+  padding-top: 100px;
+}
+
+
+
+
+
