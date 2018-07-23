@@ -1,4 +1,4 @@
-import { Injectable  } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Acronym } from './acronym'
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/map'
@@ -36,10 +36,10 @@ export class AcronymDbService {
     return dummyUrl;
   }
 
-  jsonObjToTsObj() {
-    console.log(this.data.acronym);
-    console.log(this.data.name);
-    console.log(this.data.description);
-    console.log(this.data.category);
-  }
+  //   jsonObjToTsObj() {
+  //     console.log(this.data.acronym);
+  //     console.log(this.data.name);
+  //     console.log(this.data.description);
+  //     console.log(this.data.category);
+  //   }
 }

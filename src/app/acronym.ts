@@ -1,9 +1,9 @@
- export class Acronym {
+export class Acronym {
     acronym: string;
     name: string;
     description: string;
-    category:string;
-    
+    category: string;
+
     // setAcronym(acronym: string){
     //     this.acronym=acronym;
     // }
@@ -28,6 +28,7 @@
     // getCatagory(){
     //     return this.catagory;
     // }
+
 
 
 }
