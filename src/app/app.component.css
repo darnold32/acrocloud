@@ -487,3 +487,6 @@ hr{
   border-radius: 1px;
   cursor: pointer;
 }
+.zoom{
+  zoom: 90%;
+}

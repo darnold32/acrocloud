@@ -32,6 +32,8 @@ export class ResultappComponent implements OnInit {
   public acronym: Acronym;
   private acro: String = '';
   private apiUrl = "http://localhost:8080";
+  public show:boolean = false;
+  public buttonName:any = 'Click Me!';
 
 
   constructor(private service: AcronymDbService) {
@@ -58,12 +60,31 @@ export class ResultappComponent implements OnInit {
     }
     else {
       this.acronym.description = this.acronym.description.charAt(0).toUpperCase() + this.acronym.description.slice(1);
+
     }
   }
+<<<<<<< HEAD
   addPeriod() {
   if (this.acronym.description[this.acronym.description.length-1] != ".")
      this.acronym.description = this.acronym.description + ".";
   
 }
+=======
+
+
+  //Toggle Used for the about Button
+  toggle() {
+    this.show = !this.show;
+
+    if(this.show)  
+      this.buttonName = "Hide";
+    else
+      this.buttonName = "Click Me!";
+  }
+>>>>>>> 7377f4d6751f6b0c0a71849a4fb9be6504b631de
 }
+
+
+
+
 
