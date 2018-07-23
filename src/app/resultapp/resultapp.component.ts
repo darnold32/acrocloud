@@ -42,6 +42,7 @@ export class ResultappComponent implements OnInit {
     this.service.getAcronym(this.acro).subscribe((data: Acronym) => {
       this.acronym = data;
       this.checkDescription();
+      this.addPeriod();
     });
   }
 
@@ -53,12 +54,16 @@ export class ResultappComponent implements OnInit {
 
   checkDescription() {
     if (this.acronym.description == "null") {
-      this.acronym.description = "No Description";
+      this.acronym.description = "No Description.";
     }
     else {
       this.acronym.description = this.acronym.description.charAt(0).toUpperCase() + this.acronym.description.slice(1);
     }
-
   }
+  addPeriod() {
+  if (this.acronym.description[this.acronym.description.length-1] != ".")
+     this.acronym.description = this.acronym.description + ".";
+  
+}
 }
 

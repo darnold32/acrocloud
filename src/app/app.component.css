@@ -342,15 +342,15 @@ hr{
   padding-bottom:0%!important
 }
 .acro-padding-84{
-  padding-top:84px!important;
-  padding-bottom:64px!important
+  padding-top:94px!important;
+  padding-bottom:0px!important
 }
 .acro-padding-124{
   padding-top:124px!important;
   padding-bottom:64px!important
 }
 .acro-padding-250{
-  padding-top:250px!important;
+  padding-top:220px!important;
   padding-bottom:24px!important
 }
 .acro-padding-300{
@@ -412,11 +412,19 @@ hr{
    background-attachment: scroll;
   background-size: 50%;
 }
-/*Search and random button */
-.acro-flex {
-   display: flex;
-   justify-content: center;
+.acro-bby1{
+  background-repeat:no-repeat;
+   background-position: bottom;
+   position: relative;
+   background-size: 100%;
 }
+/*Search and random button */
+
+.acro-flex {
+  display: flex;
+  justify-content: center;
+}
+
 .acro-flex-item + .acro-flex-item {
    margin-left: 10px;
 }

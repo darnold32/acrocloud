@@ -12,7 +12,6 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 
-
 export class AcronymDbService {
   private apiUrl = "http://localhost:8080/intern-onboarding-microservice-1.0/acronyms/";
   data: Acronym;
@@ -35,11 +34,4 @@ export class AcronymDbService {
     dummyUrl += cleanMe;
     return dummyUrl;
   }
-
-  //   jsonObjToTsObj() {
-  //     console.log(this.data.acronym);
-  //     console.log(this.data.name);
-  //     console.log(this.data.description);
-  //     console.log(this.data.category);
-  //   }
 }

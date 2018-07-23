@@ -369,7 +369,7 @@
     float:right!important
   }
   .acro-fromleft {
-    padding-left: 100px
+    padding-left: 10px
   }
   .acro-bbyrighttop{
     padding-top: 100%;
@@ -426,9 +426,8 @@
     background-size: 50%;
   }
   .acro-bby1{
-    background-image: url("bby.png");
     background-repeat:no-repeat;
-    background-size:0.5%;
+    background-size:50%;
     background-attachment: none;
     display: flex;
   }
@@ -440,6 +439,13 @@
   .acro-flex-item + .acro-flex-item {
      margin-left: 10px;
   }
+  .acro-flex1 {
+    display: flex;
+    justify-content: left;
+ }
+ .acro-flex-item1 + .acro-flex-item1 {
+    margin-left: 10px;
+ }
   .acro-srbutton {
      margin-top: 15px;
      background-color: rgb(0, 0, 0);
@@ -468,7 +474,6 @@
 
 .searchContainer {
   display: inline-flex;
-  flex: 1 1 300px;
   position: relative;
   border: 0px;
   overflow: hidden;
@@ -486,7 +491,7 @@
   border-width: 1px;
   border-color:blue;
   border-bottom:none solid #ccc;
-  width:100%;
+  width:50%;
   flex: 1;
   cursor: pointer;
 }
