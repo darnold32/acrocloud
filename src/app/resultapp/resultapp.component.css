@@ -259,7 +259,7 @@
     box-shadow:0px 16px 26px 0px rgba(0,0,0,0.16),0px 16px 46px 0px rgba(0,0,0,0.12)
   }
   .acro-card-4,.acro-hover-shadow:hover{
-    box-shadow:0 6px 16px 0 rgba(0,0,0,0.2),0 6px 26px 0 rgba(0,0,0,0.19)
+    box-shadow:0 10px 20px 0 rgba(0,0,0,0.2),0 6px 26px 0 rgba(0,0,0,0.19)
   }
   .text-tiny{
     font-size:10px!important
@@ -465,4 +465,44 @@
     width: 0;
     
   }
+
+.searchContainer {
+  display: inline-flex;
+  flex: 1 1 300px;
+  position: relative;
+  border: 0px;
+  overflow: hidden;
+  background-color:inherit;
+  cursor: pointer;
+}
+
+.searchIcon {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.searchBox {
+  padding:16px;
+  border-width: 1px;
+  border-color:blue;
+  border-bottom:none solid #ccc;
+  width:100%;
+  flex: 1;
+  cursor: pointer;
+}
+
+.searchButton {
+  background: rgb(16, 108, 206);
+  border: 0px solid ;;
+  color: white;
+  padding: 0;
+  border-radius: 0;
+  cursor: pointer;
+}
+.searchLogo {
+  padding: 0.5rem;
+  background: url("bby.png");
+  background-size: 10%;
+  background-repeat: no-repeat;
+}
  

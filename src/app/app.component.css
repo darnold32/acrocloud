@@ -19,9 +19,7 @@
   -webkit-appearance:button;
   font:inherit
 }
-<style>
-body {font-family: "Lato", sans-serif}
-</style>
+
 /* End extract */
 html,body{
   font-family:Verdana,sans-serif;
@@ -448,6 +446,36 @@ hr{
   
 }
 
-#zoom85{
-  zoom: 85%;
+.searchContainer {
+  display: inline-flex;
+  flex: 1 1 300px;
+  position: relative;
+  border: 0px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow:0 10px 20px 0 rgba(0,0,0,0.2),0 6px 26px 0 rgba(0,0,0,0.19);
+}
+
+.searchIcon {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.searchBox {
+  padding:16px;
+  border-width: 1px;
+  border-color:blue;
+  border-bottom:none solid #ccc;
+  width:100%;
+  flex: 1;
+  cursor: pointer;
+}
+
+.searchButton {
+  background: rgb(16, 108, 206);
+  border: 0px solid ;;
+  color: white;
+  padding: 0;
+  border-radius: 1px;
+  cursor: pointer;
 }

@@ -21,7 +21,6 @@ import { AppComponent } from '../app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    // HttpModule,
     NgbModule,
   ],
   providers: [ResultappComponent, AcronymDbService],
@@ -44,6 +43,7 @@ export class ResultappComponent implements OnInit {
       this.acronym = data;
     });
   }
+
 
   ngOnInit() {
     this.acro = this.service.acro;

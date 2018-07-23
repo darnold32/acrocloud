@@ -9,13 +9,12 @@
   </div>
 </div>
 <!-- Acronym Search Engine Section -->
-<div class="acro-light-grey acro-padding-84 acro-display-topleft ">
-  <div class=" acro-fromleft acro-half">
-    <form>
-      <input #input  id="searchbar" (keyup.enter)="searchAcronyms()" class="acro-border acro-input acro-card-4"
-      type="text" required [(ngModel)]="acro" name="acro" >
-      <button type="button" routerLink="/resultapp" (click)="searchAcronyms()">search</button>
-    </form>
+<div class="acro-light-grey acro-padding-84 acro-display-topleft  ">
+  <div class="searchContainer acro-fromleft acro-half ">
+      <input #input  id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4"
+      type="text" required [(ngModel)]="acro" name="acro" placeholder="Search for Acronyms">
+      <button class="searchButton" type="button" routerLink="/resultapp" (click)="searchAcronyms()"><i class="fa fa-search searchIcon"></i></button>
+  
   </div>
   <div class="acro-padding-16" >
     <h2 class=" acro-center">{{acronym?.name}}</h2>
