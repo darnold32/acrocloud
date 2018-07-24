@@ -61,6 +61,7 @@ export class ResultappComponent implements OnInit {
       }
       else {
         this.acronym.description = this.acronym.description.charAt(0).toUpperCase() + this.acronym.description.slice(1);
+        this.addPeriod();
 
       }
     }
