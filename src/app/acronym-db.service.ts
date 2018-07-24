@@ -29,11 +29,7 @@ export class AcronymDbService {
   }
 
     getAcronym (inputValue) {
-<<<<<<< HEAD
     if (inputValue != '') {
-=======
-    if (inputValue = '') {
->>>>>>> ece4e3fc7f303d9be7d5cb1c5556337f930d665b
       return this.http.get(this.cleanString(inputValue))
       .pipe(
         catchError(this.handleError('getAcronym', inputValue))
