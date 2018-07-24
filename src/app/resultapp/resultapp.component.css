@@ -494,7 +494,7 @@
   border-bottom:none solid #ccc;
   width:50%;
   flex: 1;
-  cursor: pointer;
+  cursor: text;
 }
 
 .searchButton {
@@ -520,6 +520,16 @@
 }
 
 
+.invis-button {
 
+  background: transparent;
+  border: none !important;
+  font-size:0;
+  width: 200px;
+  height:300px;
 
+}
+.image-cursor{
+  cursor: pointer;
+}
 

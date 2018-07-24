@@ -18,7 +18,7 @@
   </div> -->
   <div class="acro-flex1 acro-fromleft ">
       <form class="acro-flex-item1 ">
-        <img src="/bby.png" height= "50" width="80"  >
+        <img src="/bby.png" height= "50" width="80" routerLink="/home" class="image-cursor">
       </form>
     
     <form class="acro-flex-item1 searchContainer acro-half ">
@@ -34,12 +34,13 @@
     <h5 class="acro-padding-20 acro-center">{{acronym?.description}}</h5>
 
   <div>
-      <button (click)="toggle()" id="bt">
+      <button class="invis-button" (click)="toggle()" id="bt">
           {{buttonName}}
       </button>
 
       <ng-container *ngIf="show">
-        <p>This service was created by 2 microservices interns (Nate Dereb and Dan Arnold) to make Best Buy acronyms more well known!</p>
+        <p class="acro-srbutton">This service was created by 2 microservices interns (Nate Dereb and Dan Arnold) to make Best Buy acronyms more well known!</p>
+        <img src="/bby.png" height = "50" width = "80">
       </ng-container>
 
 
