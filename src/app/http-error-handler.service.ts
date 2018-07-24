@@ -28,16 +28,15 @@ export class HttpErrorHandler {
 
     return (error: HttpErrorResponse): Observable<T> => {
 
+      // value - get input value!
       const message = (error.error instanceof ErrorEvent) ?
         error.error.message :
+        `No acronym found! -  ${'"value"'} server returned code ${error.status}"`;
 
         `Acronym '${result}' Not Found! - Server returned code '${error.status}'. `;
 
-
-      this.messageService.add(`${message} /n If '${result}' is a Best Buy Acronym. Please, request an acronym submit below.` );
-
-    
       return of(result);
+      console.log(result);
     };
 
   }

@@ -1,40 +1,45 @@
- 
-<!-- Navbar --> 
+<!-- Navbar -->
 <div class="zoom acro-top" id="navbar">
   <div class="acro-bar acro-blue acro-card">
-    <a class="acro-bar-item acro-button acro-padding-large acro-hide-medium acro-hide-large acro-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="acro-bar-item acro-button acro-padding-large acro-hide-medium acro-hide-large acro-right" href="javascript:void(0)"
+      onclick="myFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
     <a routerLink="/app" class="acro-bar-item acro-button acro-padding-large">HOME</a>
     <a href="https://etk.bestbuy.com" class="acro-bar-item acro-button acro-padding-large acro-hide-small">ETK</a>
     <a href="https://hub.bestbuy.com/" class="acro-bar-item acro-button acro-padding-large acro-hide-small">Employee HUB</a>
-    <a href="https://selfservice/ESD/Loader.aspx?q=webext&f=dns" class="acro-bar-item acro-button acro-padding-large acro-hide-small">SelfService</a> 
-      </div>
-  </div>  
-  <!-- Acronym Search Engine Section -->
-  <div class="zoom acro-light-grey acro-padding-84 acro-display-topleft " id="acronymsearch">
-      <div class="acro-content acro-bby acro-padding-250" style="max-width:800px">
-           <h2 class="acro-wide acro-center">Acronym Search</h2>
-      <p class="acro-iopacity acro-center"><i>All your acronyms in one place!</i></p><br>  
-<form name="acroSearchBar">
-      <div class="searchContainer acro-full">
-    <input #input  id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4"
-    type="text" [(ngModel)]="acro" name="acro" placeholder="Search for Acronyms" >
-   <button class="searchButton acro-card-4"type="submit" routerLink="/resultapp" (click)="searchAcronyms()">
-    <i class="fa fa-search searchIcon"></i></button>
+    <a href="https://selfservice/ESD/Loader.aspx?q=webext&f=dns" class="acro-bar-item acro-button acro-padding-large acro-hide-small">SelfService</a>
   </div>
-  </form>
+</div>
+<!-- Acronym Search Engine Section -->
+<div class="zoom acro-light-grey acro-padding-84 acro-display-topleft " id="acronymsearch">
+  <div class="acro-content acro-bby acro-padding-250" style="max-width:800px">
+    <h2 class="acro-wide acro-center">Acronym Search</h2>
+    <p class="acro-iopacity acro-center">
+      <i>All your acronyms in one place!</i>
+    </p>
+    <br>
+    <form name="acroSearchBar">
+      <div class="searchContainer acro-full">
+        <input #input id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4" type="text" style="text-transform:uppercase"
+          [(ngModel)]="acro" name="acro" placeholder="Search for Acronyms">
+        <button class="searchButton acro-card-4" type="submit" routerLink="/resultapp" (click)="searchAcronyms()">
+          <i class="fa fa-search searchIcon"></i>
+        </button>
+      </div>
+    </form>
 
 
-  <!-- search and random button section -->
-  <div class="zoom acro-flex acro-padding-small">
+    <!-- search and random button section -->
+    <div class="zoom acro-flex acro-padding-small">
       <form class="acro-flex-item">
-        <button type="button" routerLink="/resultapp" (click)="searchAcronyms()" class="acro-srbutton acro-card-4"(click)="searchAcronyms(input.value)">Search</button>
+        <button type="button" routerLink="/resultapp" (click)="searchAcronyms()" class="acro-srbutton acro-card-4" (click)="searchAcronyms(input.value)">Search</button>
       </form>
-    <form class="acro-flex-item">
-        <button type="button" routerLink="/resultapp" (click)="searchAcronyms()" class="acro-srbutton acro-card-4"(click)="searchAcronyms(input.value)">Random</button>
+      <form class="acro-flex-item">
+        <button type="button" routerLink="/resultapp" (click)="searchAcronyms()" class="acro-srbutton acro-card-4" (click)="searchAcronyms(input.value)">Random</button>
       </form>
     </div>
   </div>
 </div>
 
 <router-outlet></router-outlet>
-
