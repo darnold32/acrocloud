@@ -29,11 +29,11 @@ export class AcronymDbService {
   }
 
     getAcronym (inputValue) {
-    if (inputValue = '') {
+    if (inputValue != '') {
       return this.http.get(this.cleanString(inputValue))
       .pipe(
         catchError(this.handleError('getAcronym', inputValue))
-      );;
+      );
     }
   }
   cleanString(cleanMe) {
