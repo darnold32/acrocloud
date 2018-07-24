@@ -28,20 +28,18 @@ export class AcronymDbService {
     this.handleError = httpErrorHandler.createHandleError('AcronymDbService')
   }
 
-  getAcronym(inputValue) {
-    if (inputValue != '') {
+    getAcronym (inputValue) {
+    if (inputValue = '') {
       return this.http.get(this.cleanString(inputValue))
       .pipe(
         catchError(this.handleError('getAcronym', inputValue))
       );;
     }
   }
-
   cleanString(cleanMe) {
     var dummyUrl = this.apiUrl;
     cleanMe = cleanMe.replace(/[\/\\#,+()$~%.'":*?<>{}]/g, '');
     cleanMe = cleanMe.toUpperCase();
     dummyUrl += cleanMe;
     return dummyUrl;
-  }
-}
+  }}
