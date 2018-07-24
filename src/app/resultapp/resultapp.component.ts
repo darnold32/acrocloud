@@ -32,8 +32,8 @@ export class ResultappComponent implements OnInit {
   public acronym: Acronym;
   private acro: String = '';
   private apiUrl = "http://localhost:8080";
-  public show:boolean = false;
-  public buttonName:any = 'Click Me!';
+  public show: boolean = false;
+  public buttonName: any = 'Click Me!';
 
 
   constructor(private service: AcronymDbService) {
@@ -44,7 +44,6 @@ export class ResultappComponent implements OnInit {
     this.service.getAcronym(this.acro).subscribe((data: Acronym) => {
       this.acronym = data;
       this.checkDescription();
-      this.addPeriod();
     });
   }
 
@@ -55,26 +54,29 @@ export class ResultappComponent implements OnInit {
   }
 
   checkDescription() {
-    if (this.acronym.description == "null") {
-      this.acronym.description = "No Description.";
-    }
-    else {
-      this.acronym.description = this.acronym.description.charAt(0).toUpperCase() + this.acronym.description.slice(1);
 
+    if (this.acronym.description != null) {
+      if (this.acronym.description == "null") {
+        this.acronym.description = "No Description.";
+      }
+      else {
+        this.acronym.description = this.acronym.description.charAt(0).toUpperCase() + this.acronym.description.slice(1);
+
+      }
     }
   }
   addPeriod() {
-  if (this.acronym.description[this.acronym.description.length-1] != ".")
-     this.acronym.description = this.acronym.description + ".";
-  
-}
+    if (this.acronym.description[this.acronym.description.length - 1] != ".")
+      this.acronym.description = this.acronym.description + ".";
+
+  }
 
 
   //Toggle Used for the about Button
   toggle() {
     this.show = !this.show;
 
-    if(this.show)  
+    if (this.show)
       this.buttonName = "Hide";
     else
       this.buttonName = "Click Me!";

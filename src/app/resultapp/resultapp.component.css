@@ -524,6 +524,8 @@
 
   background: transparent;
   border: none !important;
+  outline:none;
+  cursor: help;
   font-size:0;
   width: 200px;
   height:300px;
