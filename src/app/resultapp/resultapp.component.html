@@ -8,60 +8,54 @@
     <a href="https://selfservice/ESD/Loader.aspx?q=webext&f=dns" class="acro-bar-item acro-button acro-padding-large acro-hide-small">SelfService</a>
   </div>
 </div>
+
+
 <!-- Acronym Search Engine Section -->
 <div class="acro-light-grey acro-padding-84 acro-display-topleft  ">
-  <!-- <div class="searchContainer acro-fromleft acro-half ">
-      <input #input  id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4"
-      type="text" required [(ngModel)]="acro" name="acro" placeholder="Search for Acronyms">
-      <button class="searchButton" type="button" routerLink="/resultapp" (click)="searchAcronyms()"><i class="fa fa-search searchIcon"></i></button>
-  
-  </div> -->
+
   <div class="acro-flex1 acro-fromleft ">
-      <form class="acro-flex-item1 ">
-        <img src="/bby.png" height= "50" width="80" routerLink="/home" class="image-cursor">
-      </form>
-    
+    <form class="acro-flex-item1 ">
+      <img src="/bby.png" height="50" width="80" routerLink="/home" class="image-cursor">
+    </form>
+
     <form class="acro-flex-item1 searchContainer acro-half ">
-        <input #input  id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4"
-        type="text" required [(ngModel)]="acro" name="acro" placeholder="Search for Acronyms">
-        <button class="searchButton" type="button" routerLink="/resultapp" (click)="searchAcronyms()"><i class="fa fa-search searchIcon"></i></button>
-      
-        </form>
-    </div>
-  <div class="acro-padding-16" >
+      <input #input id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4" type="text" required [(ngModel)]="acro"
+        name="acro" placeholder="Search for Acronyms" style="text-transform:uppercase">
+      <button class="searchButton" type="button" routerLink="/resultapp" (click)="searchAcronyms()">
+        <i class="fa fa-search searchIcon"></i>
+      </button>
+
+    </form>
+  </div>
+
+  <!-- Displays Error Messages -->
+  <div class="acro-center acro-padding-small" *ngIf="messageService.messages.length">
+    <br>
+    <ol>
+      <h4 *ngFor='let message of messageService.messages'> {{message}} </h4>
+    </ol>
+  </div>
+
+  <div class="acro-padding-16">
     <h2 class=" acro-center">{{acronym?.name}}</h2>
     <h1 class="acro-wide acro-center">{{acronym?.acronym}}</h1>
     <h5 class="acro-padding-20 acro-center">{{acronym?.description}}</h5>
 
-    <div *ngIf="messageService.messages.length">
-        <br>
-        <ol>
-          <li *ngFor='let message of messageService.messages'> {{message}} </li>
-        </ol>
-      </div>
-      
+  </div>
 
+
+  <!-- About Button Toggle -->
   <div>
-      <button class="invis-button" (click)="toggle()" id="bt">
-          {{buttonName}}
-      </button>
+    <button class="invis-button" (click)="toggle()" id="bt">
+      {{buttonName}}
+    </button>
 
-      <ng-container *ngIf="show">
-        <p class="acro-srbutton">This service was created by 2 microservices interns (Nate Dereb and Dan Arnold) to make Best Buy acronyms more well known!</p>
-        <img src="/bby.png" height = "50" width = "80">
-      </ng-container>
+    <ng-container *ngIf="show">
+      <p class="acro-srbutton">This service was created by 2 microservices interns (Nate Dereb and Dan Arnold) to make Best Buy acronyms more well
+        known!
+      </p>
+      <img src="/bby.png" height="50" width="80">
+    </ng-container>
 
-
-    <!-- About Intern section -->
-    <div>
-        <button (click)="toggle()" id="bt">
-        {{buttonName}}
-        </button>
-        
-        <ng-container *ngIf="show">
-        <p>This web-application was created by two microservices interns (Nathenael Dereb and Dan Arnold) to make Best Buy acronyms more well known!</p>
-        </ng-container>
-        
-        </div> 
   </div>
 </div>

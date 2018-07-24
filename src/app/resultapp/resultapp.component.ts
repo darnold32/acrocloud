@@ -14,7 +14,7 @@ import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-resultapp',
-  templateUrl: './resultapp.component.html', 
+  templateUrl: './resultapp.component.html',
   styleUrls: ['./resultapp.component.css']
 })
 @NgModule({
@@ -42,6 +42,7 @@ export class ResultappComponent implements OnInit {
   constructor(private service: AcronymDbService, public messageService: MessageService) {
   }
 
+  //Subs our Acronym object to the one populated with information from Cassandra
   searchAcronyms() {
     console.log(this.acro);
     this.service.getAcronym(this.acro).subscribe((data: Acronym) => {
@@ -51,14 +52,21 @@ export class ResultappComponent implements OnInit {
   }
 
 
+  //Hits database with user input as page loads
   ngOnInit() {
     this.acro = this.service.acro;
     this.searchAcronyms();
   }
 
+
+
+  //Checks to see if description is a non null field, if it is it sets the first char to uppercase and adds a period to the end.
   checkDescription() {
 
     if (this.acronym.description != null) {
+
+      this.messageService.clear();
+
       if (this.acronym.description == "null") {
         this.acronym.description = "No Description.";
       }
@@ -69,10 +77,14 @@ export class ResultappComponent implements OnInit {
       }
     }
   }
+
+  //Method adds period to the end of a description if it does not have one
   addPeriod() {
     if (this.acronym.description[this.acronym.description.length - 1] != ".")
       this.acronym.description = this.acronym.description + ".";
   }
+
+  //toggles the visibility of the about button
   toggle() {
     this.show = !this.show;
 
@@ -81,5 +93,8 @@ export class ResultappComponent implements OnInit {
     else
       this.buttonName = "Click Me!";
   }
-}
 
+
+
+
+}

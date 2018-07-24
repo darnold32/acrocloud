@@ -224,7 +224,7 @@ insert into acrocloud.acronym (acronym, name, description, category)
 values ('DMS', 'Digital Message Switchport', 'null', 'IT' );
 
 insert into acrocloud.acronym (acronym, name, description, category)
-values ('ESP', 'Enterprise Service Platform', ' container which allows multiple services to be plugged in which provide various types of functionality to client applications', 'IT' );
+values ('ESP', 'Enterprise Service Platform', 'container which allows multiple services to be plugged in which provide various types of functionality to client applications', 'IT' );
 
 insert into acrocloud.acronym (acronym, name, description, category)
 values ('ET', 'Exact Target', 'Digital marketing automation and analytics software and services', 'IT' );

@@ -33,11 +33,10 @@ export class AppComponent {
   value = '';
   acro: String = '';
 
-  // // public acronym:Acronym;
-  // private apiUrl = "http://localhost:8080";
+
 
   constructor(private service: AcronymDbService) {
-     console.log()
+    console.log()
 
   }
 
@@ -46,7 +45,7 @@ export class AppComponent {
   }
 
 
-  }
+}
 
 
 

@@ -28,15 +28,17 @@ export class AcronymDbService {
     this.handleError = httpErrorHandler.createHandleError('AcronymDbService')
   }
 
+  //Gets JSON from Java API
   getAcronym(value) {
     if (value != '') {
       return this.http.get(this.cleanString(value))
-      .pipe(
-        catchError(this.handleError('getAcronym', []))
-      );;
+        .pipe(
+          catchError(this.handleError('getAcronym', []))
+        );;
     }
   }
 
+  //String cleaning to remove periods, sets the input to upper case, and appends to URL. 
   cleanString(cleanMe) {
     var dummyUrl = this.apiUrl;
     cleanMe = cleanMe.replace(/[\/\\#,+()$~%.'":*?<>{}]/g, '');

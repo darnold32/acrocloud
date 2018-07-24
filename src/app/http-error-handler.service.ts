@@ -28,19 +28,19 @@ export class HttpErrorHandler {
     @param result - optional value to return as the observable result
    */
 
-  handleError<T> (serviceName = '', operation = 'operation', result = {} as T) {
+  handleError<T>(serviceName = '', operation = 'operation', result = {} as T) {
 
     return (error: HttpErrorResponse): Observable<T> => {
       //  console.error(error); // log to console instead.
 
-// value - get input value!
+      // value - get input value!
       const message = (error.error instanceof ErrorEvent) ?
         error.error.message :
-       `No acronym found! -  ${'"value"'} server returned code ${error.status}"`;
+        `No acronym found! -  ${'"value"'} server returned code ${error.status}"`;
 
       this.messageService.add(` ${message} `);
 
-      return of( result );
+      return of(result);
       console.log(result);
     };
 
