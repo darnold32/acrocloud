@@ -30,23 +30,20 @@ import { Acronym } from './acronym';
 
 export class AppComponent {
   title = 'Acronym Search';
-  value = '';
   acro: String = '';
 
-  // // public acronym:Acronym;
-  // private apiUrl = "http://localhost:8080";
 
-  constructor(private service: AcronymDbService) {
-     console.log()
+  constructor(private AcronymDbService: AcronymDbService) {
+    console.log()
 
   }
 
   searchAcronyms() {
-    this.service.acro = this.acro;
+    this.AcronymDbService.acro = this.acro;
   }
 
 
-  }
+}
 
 
 

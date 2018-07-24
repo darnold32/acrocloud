@@ -28,11 +28,11 @@ export class AcronymDbService {
     this.handleError = httpErrorHandler.createHandleError('AcronymDbService')
   }
 
-  getAcronym(value) {
-    if (value != '') {
-      return this.http.get(this.cleanString(value))
+  getAcronym(inputValue) {
+    if (inputValue != '') {
+      return this.http.get(this.cleanString(inputValue))
       .pipe(
-        catchError(this.handleError('getAcronym', []))
+        catchError(this.handleError('getAcronym', inputValue))
       );;
     }
   }
