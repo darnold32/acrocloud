@@ -45,6 +45,7 @@ export class ResultappComponent implements OnInit {
   //Subs our Acronym object to the one populated with information from Cassandra
   searchAcronyms() {
     console.log(this.acro);
+    this.acro = this.acro.toUpperCase();
     this.service.getAcronym(this.acro).subscribe((data: Acronym) => {
       this.acronym = data;
       this.checkDescription();

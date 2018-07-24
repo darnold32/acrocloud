@@ -32,7 +32,8 @@
   <div class="acro-center acro-padding-small" *ngIf="messageService.messages.length">
     <br>
     <ol>
-      <h4 *ngFor='let message of messageService.messages'> {{message}} </h4>
+        <div *ngFor='let message of messageService.messages' [innerHTML]="message"></div>
+      <!-- <h4 *ngFor='let message of messageService.messages'> {{message}} </h4> -->
     </ol>
   </div>
 

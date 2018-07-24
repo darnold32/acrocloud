@@ -12,9 +12,6 @@ export class MessageService {
     this.messages = [];
   }
 
-  clearAuto() {
-      if (this.messages == this.messages ) {
-          this.messages = []
-      }
-  }
+ 
+  
 }

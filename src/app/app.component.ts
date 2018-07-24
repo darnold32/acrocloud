@@ -39,6 +39,7 @@ export class AppComponent {
   }
 
   searchAcronyms() {
+    this.acro = this.acro.toUpperCase();
     this.AcronymDbService.acro = this.acro;
   }
 
