@@ -8,9 +8,9 @@ describe('ResultappComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ResultappComponent ]
+      declarations: [ResultappComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

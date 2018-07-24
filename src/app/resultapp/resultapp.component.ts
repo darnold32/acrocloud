@@ -1,17 +1,20 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { AcronymDbService } from 'src/app/acronym-db.service';
+import { Component, OnInit, Input, Injectable, Injector } from '@angular/core';
+import { AcronymDbService } from '../acronym-db.service';
 import 'rxjs/add/operator/map';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { BrowserModule } from 'node_modules/@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { Acronym } from 'src/app/acronym';
+import { Acronym } from '../acronym';
 import { AppComponent } from '../app.component';
+import { ErrorHandler } from '@angular/core'
+import { HttpErrorResponse } from '@angular/common/http';
+import { MessageService } from '../message.service';
 
 
 @Component({
   selector: 'app-resultapp',
-  templateUrl: './resultapp.component.html',
+  templateUrl: './resultapp.component.html', 
   styleUrls: ['./resultapp.component.css']
 })
 @NgModule({
@@ -26,17 +29,17 @@ import { AppComponent } from '../app.component';
   providers: [ResultappComponent, AcronymDbService],
   bootstrap: [ResultappComponent]
 })
-
+@Injectable()
 export class ResultappComponent implements OnInit {
   value = '';
   public acronym: Acronym;
   private acro: String = '';
   private apiUrl = "http://localhost:8080";
-  public show:boolean = false;
-  public buttonName:any = 'Click Me!';
+  public show: boolean = false;
+  public buttonName: any = 'Click Me!';
 
 
-  constructor(private service: AcronymDbService) {
+  constructor(private service: AcronymDbService, public messageService: MessageService) {
   }
 
   searchAcronyms() {
@@ -60,29 +63,50 @@ export class ResultappComponent implements OnInit {
     }
     else {
       this.acronym.description = this.acronym.description.charAt(0).toUpperCase() + this.acronym.description.slice(1);
-
     }
   }
-<<<<<<< HEAD
   addPeriod() {
-  if (this.acronym.description[this.acronym.description.length-1] != ".")
-     this.acronym.description = this.acronym.description + ".";
-  
-}
-=======
-
-
-  //Toggle Used for the about Button
+    if (this.acronym.description[this.acronym.description.length - 1] != ".")
+      this.acronym.description = this.acronym.description + ".";
+  }
   toggle() {
     this.show = !this.show;
 
-    if(this.show)  
+    if (this.show)
       this.buttonName = "Hide";
     else
       this.buttonName = "Click Me!";
   }
->>>>>>> 7377f4d6751f6b0c0a71849a4fb9be6504b631de
 }
+// @Injectable()
+// export class MyErrorHandler implements ErrorHandler {
+
+// constructor(private injector: Injector,){}
+
+//   handleError(error: Error | HttpErrorResponse) {
+    
+//     const notificationService = this.injector.get(NotificationService);
+    
+
+//     if (error instanceof HttpErrorResponse) {
+//       //log 
+//       if (!navigator.onLine) {
+//       return notificationService.notify('No Internet Connection.');
+//       } else {
+//          (error.status == 403, 404)
+//          return notificationService.notify('${error.status} - ${error.message}');
+//       }
+//     } else {
+//       //(Angular Error, ReferenceError)
+//     }
+//     console.log('404: ', error);
+//   }
+
+// }
+  //Toggle Used for the about Button
+ 
+
+
 
 
 

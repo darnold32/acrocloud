@@ -8,6 +8,11 @@ import { NgModule } from '@angular/core';
 
 import { HttpClient } from '@angular/common/http';
 
+import { Observable } from 'rxjs';
+import { catchError } from 'rxjs/operators';
+import { HttpErrorHandler, HandleError } from './http-error-handler.service';
+
+
 @Injectable({
   providedIn: 'root'
 })
@@ -17,13 +22,18 @@ export class AcronymDbService {
   data: Acronym;
   jString: string;
   acro: String = '';
+  private handleError: HandleError;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, httpErrorHandler: HttpErrorHandler) {
+    this.handleError = httpErrorHandler.createHandleError('AcronymDbService')
   }
 
   getAcronym(value) {
     if (value != '') {
-      return this.http.get(this.cleanString(value));
+      return this.http.get(this.cleanString(value))
+      .pipe(
+        catchError(this.handleError('getAcronym', []))
+      );;
     }
   }
 
