@@ -63,13 +63,11 @@ export class ResultappComponent implements OnInit {
 
     }
   }
-<<<<<<< HEAD
   addPeriod() {
   if (this.acronym.description[this.acronym.description.length-1] != ".")
      this.acronym.description = this.acronym.description + ".";
   
 }
-=======
 
 
   //Toggle Used for the about Button
@@ -81,7 +79,6 @@ export class ResultappComponent implements OnInit {
     else
       this.buttonName = "Click Me!";
   }
->>>>>>> 7377f4d6751f6b0c0a71849a4fb9be6504b631de
 }
 
 

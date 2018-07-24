@@ -10,7 +10,6 @@
 </div>
 <!-- Acronym Search Engine Section -->
 <div class="acro-light-grey acro-padding-84 acro-display-topleft  ">
-<<<<<<< HEAD
   <!-- <div class="searchContainer acro-fromleft acro-half ">
       <input #input  id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4"
       type="text" required [(ngModel)]="acro" name="acro" placeholder="Search for Acronyms">
@@ -34,24 +33,6 @@
     <h1 class="acro-wide acro-center">{{acronym?.acronym}}</h1>
     <h5 class="acro-padding-20 acro-center">{{acronym?.description}}</h5>
 
-     <!-- search and random button section -->
- 
-    </div>
-=======
-  <div class="searchContainer acro-fromleft acro-half ">
-    <input #input id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4" type="text" required [(ngModel)]="acro"
-      name="acro" placeholder="Search for Acronyms">
-    <button class="searchButton" type="button" routerLink="/resultapp" (click)="searchAcronyms()">
-      <i class="fa fa-search searchIcon"></i>
-    </button>
-
-  </div>
-  <div class="acro-padding-16">
-    <h2 class=" acro-center">{{acronym?.name}}</h2>
-    <h1 class="acro-wide acro-center"> {{acronym?.acronym}}</h1>
-    <h5 class="acro-padding-20 acro-center">{{acronym.description}}</h5>
-  </div>
-
   <div>
       <button (click)="toggle()" id="bt">
           {{buttonName}}
@@ -63,5 +44,4 @@
 
 
   </div>
->>>>>>> 7377f4d6751f6b0c0a71849a4fb9be6504b631de
 </div>
