@@ -78,37 +78,4 @@ export class ResultappComponent implements OnInit {
       this.buttonName = "Click Me!";
   }
 }
-// @Injectable()
-// export class MyErrorHandler implements ErrorHandler {
-
-// constructor(private injector: Injector,){}
-
-//   handleError(error: Error | HttpErrorResponse) {
-    
-//     const notificationService = this.injector.get(NotificationService);
-    
-
-//     if (error instanceof HttpErrorResponse) {
-//       //log 
-//       if (!navigator.onLine) {
-//       return notificationService.notify('No Internet Connection.');
-//       } else {
-//          (error.status == 403, 404)
-//          return notificationService.notify('${error.status} - ${error.message}');
-//       }
-//     } else {
-//       //(Angular Error, ReferenceError)
-//     }
-//     console.log('404: ', error);
-//   }
-
-// }
-  //Toggle Used for the about Button
- 
-
-
-
-
-
-
 

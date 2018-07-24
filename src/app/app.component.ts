@@ -37,7 +37,7 @@ export class AppComponent {
   // private apiUrl = "http://localhost:8080";
 
   constructor(private service: AcronymDbService) {
-    console.log()
+     console.log()
 
   }
 
