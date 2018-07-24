@@ -476,7 +476,7 @@ hr{
   border-bottom:none solid #ccc;
   width:100%;
   flex: 1;
-  cursor: pointer;
+  cursor: text;
 }
 
 .searchButton {

@@ -17,24 +17,22 @@
   
   </div> -->
   <div class="acro-flex1 acro-fromleft ">
-    <form class="acro-flex-item1 ">
-      <img src="/bby.png" height="50" width="80">
-    </form>
-
+      <form class="acro-flex-item1 ">
+        <img src="/bby.png" height= "50" width="80" routerLink="/home" class="image-cursor">
+      </form>
+    
     <form class="acro-flex-item1 searchContainer acro-half ">
-      <input #input id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4" type="text" required [(ngModel)]="acro"
-        name="acro" placeholder="Search for Acronyms">
-      <button class="searchButton" type="button" routerLink="/resultapp" (click)="searchAcronyms()">
-        <i class="fa fa-search searchIcon"></i>
-      </button>
-
-    </form>
-  </div>
-  <div class="acro-padding-16">
+        <input #input  id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4"
+        type="text" required [(ngModel)]="acro" name="acro" placeholder="Search for Acronyms">
+        <button class="searchButton" type="button" routerLink="/resultapp" (click)="searchAcronyms()"><i class="fa fa-search searchIcon"></i></button>
+      
+        </form>
+    </div>
+  <div class="acro-padding-16" >
     <h2 class=" acro-center">{{acronym?.name}}</h2>
     <h1 class="acro-wide acro-center">{{acronym?.acronym}}</h1>
     <h5 class="acro-padding-20 acro-center">{{acronym?.description}}</h5>
-    
+
     <div *ngIf="messageService.messages.length">
         <h3>Messages</h3>
         <button class="clear" (click)="messageService.clear()">clear</button>
@@ -43,6 +41,17 @@
           <li *ngFor='let message of messageService.messages'> {{message}} </li>
         </ol>
       </div>
+
+  <div>
+      <button class="invis-button" (click)="toggle()" id="bt">
+          {{buttonName}}
+      </button>
+
+      <ng-container *ngIf="show">
+        <p class="acro-srbutton">This service was created by 2 microservices interns (Nate Dereb and Dan Arnold) to make Best Buy acronyms more well known!</p>
+        <img src="/bby.png" height = "50" width = "80">
+      </ng-container>
+
 
     <!-- About Intern section -->
     <div>
