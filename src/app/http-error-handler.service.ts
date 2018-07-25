@@ -33,7 +33,7 @@ export class HttpErrorHandler {
 
         `Acronym '  ${result}  ' Not Found! - server returned code '${error.status}'. `;
 
-      this.messageService.add(`<p> ${message}' <br> <br> If '  ${result}  ' is a Best Buy acronym. Please, request an acronym submit below. </p>` );
+      this.messageService.add( ` <p> <h2> '404' </h2>  </p> <p>  ${message}' <br> <br> If '  ${result}  ' is a Best Buy acronym. Please, request an acronym submit below. </h4> ` );
      
      
 
