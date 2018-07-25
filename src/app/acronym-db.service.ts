@@ -33,8 +33,13 @@ export class AcronymDbService {
       return this.http.get(this.cleanString(inputValue))
       .pipe(
         catchError(this.handleError('getAcronym', inputValue))
+<<<<<<< HEAD
       )
     };
+=======
+      );
+    }
+>>>>>>> 4b4458622ba86b8c22f857f54a2800c7ecb409f1
   }
 
   cleanString(cleanMe) {

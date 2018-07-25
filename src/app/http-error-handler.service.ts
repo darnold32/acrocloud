@@ -29,6 +29,7 @@ export class HttpErrorHandler {
     return (error: HttpErrorResponse): Observable<T> => {
 
       const message = (error.error instanceof ErrorEvent) ?
+<<<<<<< HEAD
         error.error.message:
 
         `Acronym '  ${result}  ' Not Found! - server returned code '${error.status}'. `;
@@ -36,6 +37,13 @@ export class HttpErrorHandler {
       this.messageService.add( ` <p> <h2> '404' </h2>  </p> <p>  ${message}' <br> <br> If '  ${result}  ' is a Best Buy acronym. Please, request an acronym submit below. </h4> ` );
      
      
+=======
+        error.error.message :
+
+        `Acronym '${result}' Not Found! - Server returned code '${error.status}'. `;
+
+      this.messageService.add(`${message} /n If '${result}' is a Best Buy Acronym. Please, request an acronym submit below.` );
+>>>>>>> 4b4458622ba86b8c22f857f54a2800c7ecb409f1
 
     
       return of(result);
@@ -44,3 +52,4 @@ export class HttpErrorHandler {
   }
 
 }
+
