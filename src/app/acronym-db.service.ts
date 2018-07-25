@@ -37,6 +37,15 @@ export class AcronymDbService {
     };
   }
 
+  getRandomAcronym(){
+    
+    return this.http.get(this.apiUrl)[Math.floor(Math.random() * Acronym.length)];
+      
+    };
+  
+      
+ 
+
   cleanString(cleanMe) {
     var dummyUrl = this.apiUrl;
     cleanMe = cleanMe.replace(/[\/\\#,+()$~%.'":*?<>{}]/g, '');

@@ -31,9 +31,9 @@ export class HttpErrorHandler {
       const message = (error.error instanceof ErrorEvent) ?
         error.error.message:
 
-        `Acronym '  ${result}  ' Not Found! - server returned code '${error.status}'. `;
+        `Acronym '  ${result}  ' Not Found!`;
 
-      this.messageService.add( ` <p> <h2> '404' </h2>  </p> <p>  ${message}' <br> <br> If '  ${result}  ' is a Best Buy acronym. Please, request an acronym submit below. </h4> ` );
+      this.messageService.add( ` <h3> 404 </h3> ${message}' <br> <br> If '  ${result}  ' is a Best Buy acronym please, request an acronym submit below. ` );
      
      
 
