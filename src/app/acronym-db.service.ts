@@ -33,14 +33,18 @@ export class AcronymDbService {
       return this.http.get(this.cleanString(inputValue))
       .pipe(
         catchError(this.handleError('getAcronym', inputValue))
-<<<<<<< HEAD
-      )
-    };
-=======
       );
-    }
->>>>>>> 4b4458622ba86b8c22f857f54a2800c7ecb409f1
+    } 
   }
+
+  getRandomAcronym(){
+    
+    return this.http.get(this.apiUrl)[Math.floor(Math.random() * Acronym.length)];
+      
+    };
+  
+      
+ 
 
   cleanString(cleanMe) {
     var dummyUrl = this.apiUrl;

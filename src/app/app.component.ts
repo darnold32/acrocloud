@@ -42,6 +42,10 @@ export class AppComponent {
     this.AcronymDbService.acro = this.acro;
   }
 
+  searchRandomAcronym() {
+    this.searchRandomAcronym();
+  }
+
 
 }
 

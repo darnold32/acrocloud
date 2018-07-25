@@ -52,6 +52,12 @@ export class ResultappComponent implements OnInit {
     });
   }
 
+  searchRandomAcronym() {
+    this.service.getRandomAcronym().subscribe((data: Acronym) => {
+      this.acronym = data;
+      this.checkDescription();
+    })
+  }
 
   //Hits database with user input as page loads
   ngOnInit() {

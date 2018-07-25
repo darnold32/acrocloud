@@ -15,7 +15,7 @@
 
   <div class="acro-flex1 acro-fromleft ">
     <form class="acro-flex-item1 ">
-      <img src="/bby.png" height="50" width="80" routerLink="/home" class="image-cursor">
+      <img src="/bby.png" height="50" width="80" routerLink="/home" >
     </form>
 
     <form class="acro-flex-item1 searchContainer acro-half ">
@@ -31,10 +31,10 @@
   <!-- Displays Error Messages -->
   <div class="acro-center acro-padding-small" *ngIf="messageService.messages.length">
     <br>
-    <ol>
+    <br>
         <div *ngFor='let message of messageService.messages' [innerHTML]="message"></div>
-      <!-- <h4 *ngFor='let message of messageService.messages'> {{message}} </h4> -->
-    </ol>
+     
+    
   </div>
 
   <div class="acro-padding-16">
