@@ -21,9 +21,9 @@
     <br>
     <form name="acroSearchBar">
       <div class="searchContainer acro-full">
-        <input #input id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4" type="text" style="text-transform:uppercase"
+        <input #input id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4"type="text" style="text-transform:uppercase"
           [(ngModel)]="acro" name="acro" placeholder="Search for Acronyms">
-        <button class="searchButton acro-card-4" type="submit" routerLink="/resultapp" (click)="searchAcronyms()">
+        <button [disabled]="input.value.length <1" class="searchButton acro-card-4" type="submit" routerLink="/resultapp" (click)="searchAcronyms()">
           <i class="fa fa-search searchIcon"></i>
         </button>
       </div>
@@ -33,10 +33,10 @@
     <!-- search and random button section -->
     <div class="zoom acro-flex acro-padding-small">
       <form class="acro-flex-item">
-        <button type="button" routerLink="/resultapp" (click)="searchAcronyms()" class="acro-srbutton acro-card-4" (click)="searchAcronyms(input.value)">Search</button>
+        <button [disabled]="input.value.length <1" type="button" routerLink="/resultapp" (click)="searchAcronyms()" class="acro-srbutton acro-card-4" (click)="searchAcronyms(input.value)">Search</button>
       </form>
       <form class="acro-flex-item">
-        <button type="button" routerLink="/resultapp" (click)="searchAcronyms()" class="acro-srbutton acro-card-4" (click)="searchAcronyms(input.value)">Random</button>
+        <button type="button" routerLink="/resultapp" (click)="randomAcronyms()" class="acro-srbutton acro-card-4" >Random</button>
       </form>
     </div>
   </div>

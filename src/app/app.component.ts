@@ -42,6 +42,11 @@ export class AppComponent {
     this.AcronymDbService.acro = this.acro;
   }
 
+  randomAcronyms(){
+    this.AcronymDbService.acro = "PDW";
+  }
+
+
 
 }
 

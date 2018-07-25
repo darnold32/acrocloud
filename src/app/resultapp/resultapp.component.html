@@ -21,7 +21,7 @@
     <form class="acro-flex-item1 searchContainer acro-half ">
       <input #input id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4" type="text" required [(ngModel)]="acro"
         name="acro" placeholder="Search for Acronyms" style="text-transform:uppercase">
-      <button class="searchButton" type="button" routerLink="/resultapp" (click)="searchAcronyms()">
+      <button [disabled]="input.value.length <1" class="searchButton" type="button" routerLink="/resultapp" (click)="searchAcronyms()">
         <i class="fa fa-search searchIcon"></i>
       </button>
 
@@ -32,11 +32,11 @@
   <div class="acro-center acro-padding-small" *ngIf="messageService.messages.length">
     <br>
     <ol>
-        <div *ngFor='let message of messageService.messages' [innerHTML]="message"></div>
+      <div *ngFor='let message of messageService.messages' [innerHTML]="message"></div>
       <!-- <h4 *ngFor='let message of messageService.messages'> {{message}} </h4> -->
     </ol>
   </div>
-
+  <!--Displays the Acronym Information-->
   <div class="acro-padding-16">
     <h2 class=" acro-center">{{acronym?.name}}</h2>
     <h1 class="acro-wide acro-center">{{acronym?.acronym}}</h1>
@@ -55,7 +55,7 @@
       <p class="acro-srbutton">This service was created by 2 microservices interns (Nate Dereb and Dan Arnold) to make Best Buy acronyms more well
         known!
       </p>
-      <img src="/bby.png" height="50" width="80">
+      <!-- <img src="/bby.png" height="50" width="80"> -->
     </ng-container>
 
   </div>
