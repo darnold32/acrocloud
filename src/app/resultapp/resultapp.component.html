@@ -46,14 +46,13 @@
 
 
   <!-- About Button Toggle -->
-  <div>
-    <button class="invis-button" (click)="toggle()" id="bt">
+  <div class="acro-center">
+    <button class="invis-button acro-center" (click)="toggle()" id="bt">
       {{buttonName}}
     </button>
 
     <ng-container *ngIf="show">
-      <p class="acro-srbutton">This service was created by 2 microservices interns (Nate Dereb and Dan Arnold) to make Best Buy acronyms more well
-        known!
+      <p class="invis-button-text">This service was created by microservice interns (Nate Dereb and Dan Arnold) with the intent to emualte the work of microservice software engineers. If this is on ETK, that was our end goal!
       </p>
       <!-- <img src="/bby.png" height="50" width="80"> -->
     </ng-container>

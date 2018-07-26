@@ -36,7 +36,7 @@ export class ResultappComponent implements OnInit {
   private acro: String = '';
   private apiUrl = "http://localhost:8080";
   public show: boolean = false;
-  public buttonName: any = 'Click Me!';
+  public buttonName: any = 'About This Service';
 
 
   constructor(private service: AcronymDbService, public messageService: MessageService) {
@@ -98,7 +98,7 @@ export class ResultappComponent implements OnInit {
     if (this.show)
       this.buttonName = "Hide";
     else
-      this.buttonName = "Click Me!";
+      this.buttonName = "About This Service!";
   }
 
 

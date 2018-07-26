@@ -321,7 +321,8 @@
   }
   .acro-padding-16{
     /* padding-bottom:150px!important; */
-    padding-top:90px!important
+  /* was 90px if this screwes with other things */
+    padding-top:40px!important
   }
   .acro-padding-20{
     padding-bottom:0px!important;
@@ -521,15 +522,24 @@
 
 
 .invis-button {
+  margin-top: 15px;
+  background-color: #2196F3;
+  border-color:white;
+  border: 10;
+  color: #f1f1f1!important;;
+  padding: 10px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  height: 50;
+  width: 100;
+}
 
-  background: transparent;
-  border: none !important;
-  outline:none;
-  cursor: help;
-  font-size:0;
-  width: 200px;
-  height:300px;
-
+.invis-button-text{
+  background-color:#f1f1f1!important;
+  color:#2196F3;
 }
 .image-cursor{
   cursor: pointer;

@@ -38,6 +38,8 @@ AND compaction = {
 };
 //drop table acrocloud.acronym;
 
+select token(acronym)from acrocloud.acronym;
+select * from acrocloud.acronym where token(acronym)>3 limit 1;
 select * from acrocloud.acronym;
  
 insert into acrocloud.acronym (acronym, name, description, category)
