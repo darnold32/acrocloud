@@ -6,6 +6,7 @@
     <a href="https://etk.bestbuy.com" class="acro-bar-item acro-button acro-padding-large acro-hide-small">ETK</a>
     <a href="https://hub.bestbuy.com/" class="acro-bar-item acro-button acro-padding-large acro-hide-small">Employee HUB</a>
     <a href="https://selfservice/ESD/Loader.aspx?q=webext&f=dns" class="acro-bar-item acro-button acro-padding-large acro-hide-small">SelfService</a>
+    <a class="acro-bar-item acro-button acro-padding-large acro-hide-small" (click)="toggle()" id="bt">About</a>
   </div>
 </div>
 
@@ -21,7 +22,7 @@
     <form class="acro-flex-item1 searchContainer acro-half ">
       <input #input id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4" type="text" required [(ngModel)]="acro"
         name="acro" placeholder="Search for Acronyms" style="text-transform:uppercase">
-      <button [disabled]="input.value.length <1" class="searchButton" type="button" routerLink="/resultapp" (click)="searchAcronyms()">
+      <button [disabled]="input.value.length < 1" class="searchButton" type="button" routerLink="/resultapp" (click)="searchAcronyms()">
         <i class="fa fa-search searchIcon"></i>
       </button>
 
@@ -37,7 +38,7 @@
     </ol>
   </div>
   <!--Displays the Acronym Information-->
-  <div class="acro-padding-16">
+  <div class="acro-padding-16"  *ngIf="hide" >
     <h2 class=" acro-center">{{acronym?.name}}</h2>
     <h1 class="acro-wide acro-center">{{acronym?.acronym}}</h1>
     <h5 class="acro-padding-20 acro-center">{{acronym?.description}}</h5>
@@ -46,16 +47,14 @@
 
 
   <!-- About Button Toggle -->
-  <div class="acro-center">
-    <button class="invis-button acro-center" (click)="toggle()" id="bt">
-      {{buttonName}}
-    </button>
-
-    <ng-container *ngIf="show">
-      <p class="invis-button-text">This service was created by microservice interns (Nate Dereb and Dan Arnold) with the intent to emualte the work of microservice software engineers. If this is on ETK, that was our end goal!
-      </p>
+    <ng-container class="acro-padding-16"  *ngIf="show">
+        <h2 class=" acro-center acro-padding-16">Acronym Search Engine</h2>
+        <h1 class=" acro-center">AcroCloud Project</h1>
+        <h5 class="acro-padding-20 acro-center">This service (web app) is created by two microservice interns (Nathenael Dereb and Dan Arnold) with the intent to show the skills they've gained while interning at Best Buy and emualte the work of microservice software engineers.
+          </h5>
+      
       <!-- <img src="/bby.png" height="50" width="80"> -->
     </ng-container>
 
-  </div>
+  
 </div>

@@ -36,6 +36,7 @@ export class ResultappComponent implements OnInit {
   private acro: String = '';
   private apiUrl = "http://localhost:8080";
   public show: boolean = false;
+  public hide: boolean = true;
   public buttonName: any = 'About This Service';
 
 
@@ -56,6 +57,7 @@ export class ResultappComponent implements OnInit {
     this.service.getRandomAcronym().subscribe((data: Acronym) => {
       this.acronym = data;
       this.checkDescription();
+
     })
   }
 
@@ -94,7 +96,8 @@ export class ResultappComponent implements OnInit {
   //toggles the visibility of the about button
   toggle() {
     this.show = !this.show;
-
+    this.hide = !this.hide;
+    
     if (this.show)
       this.buttonName = "Hide";
     else
