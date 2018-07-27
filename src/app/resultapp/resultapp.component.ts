@@ -53,13 +53,7 @@ export class ResultappComponent implements OnInit {
     });
   }
 
-  searchRandomAcronym() {
-    this.service.getRandomAcronym().subscribe((data: Acronym) => {
-      this.acronym = data;
-      this.checkDescription();
 
-    })
-  }
 
   //Hits database with user input as page loads
   ngOnInit() {
@@ -97,7 +91,7 @@ export class ResultappComponent implements OnInit {
   toggle() {
     this.show = !this.show;
     this.hide = !this.hide;
-    
+
     if (this.show)
       this.buttonName = "Hide";
     else
