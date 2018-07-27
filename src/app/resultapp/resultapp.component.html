@@ -20,7 +20,7 @@
     </form>
 
     <form class="acro-flex-item1 searchContainer acro-half ">
-      <input #input id="searchbar" (keyup.enter)="searchAcronyms()" class="searchBox acro-card-4" type="text" required [(ngModel)]="acro"
+      <input #input id="searchbar" (keyup.enter)="searchAcronyms()"class="searchBox acro-card-4" type="text" required [(ngModel)]="acro"
         name="acro" placeholder="Search for Acronyms" style="text-transform:uppercase">
       <button [disabled]="input.value.length < 1" class="searchButton" type="button" routerLink="/resultapp" (click)="searchAcronyms()">
         <i class="fa fa-search searchIcon"></i>
